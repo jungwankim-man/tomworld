@@ -19,8 +19,15 @@ minify:
 params:
   env: production
   title: tomworld
-  description: "tomworld blog"
-  author: jungwankim-man
+  description: "일상의 이슈, 시사, 투자, 여행, 기술까지 — 깊이 있게 다루는 tomworld 블로그"
+  author: Jungwan Kim
+  keywords:
+    - 시사
+    - 이슈
+    - 투자
+    - 여행
+    - 기술
+    - 생활정보
   defaultTheme: auto
   ShowReadingTime: true
   ShowShareButtons: false
@@ -38,8 +45,10 @@ params:
   tocopen: false
 
   homeInfoParams:
-    Title: "tomworld"
-    Content: "자동 생성 블로그"
+    Title: "tomworld에 오신 것을 환영합니다 👋"
+    Content: >
+      일상의 이슈, 시사, 투자, 여행, 기술까지 — 매일 변하는 세상을
+      독자 여러분께 깊이 있게 전달하는 블로그입니다.
 
   assets:
     disableHLJS: false
@@ -59,6 +68,18 @@ menu:
       name: 아카이브
       url: /archives/
       weight: 30
+    - identifier: about
+      name: 소개
+      url: /about/
+      weight: 40
+    - identifier: contact
+      name: 문의
+      url: /contact/
+      weight: 50
+    - identifier: privacy
+      name: 개인정보처리방침
+      url: /privacy/
+      weight: 60
 
 outputs:
   home:
