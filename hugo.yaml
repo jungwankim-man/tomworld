@@ -54,6 +54,10 @@ params:
     disableHLJS: false
     favicon: "/favicon.ico"
 
+  analytics:
+    google:
+      SiteVerificationTag: "N_Hi7B_I29TZ0IJI6XBLaDQzwyPBC4Q-87CaFhni7wI"
+
 menu:
   main:
     - identifier: posts
