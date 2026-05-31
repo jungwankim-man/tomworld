@@ -4,6 +4,8 @@ defaultContentLanguage: ko
 title: tomworld
 theme: PaperMod
 
+googleAnalytics: G-JHJJN0EHNB
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
