@@ -1,0 +1,10 @@
+{{- /* Render hook for markdown links.
+       - Internal links (relative or same host as baseURL): default behavior
+       - External links: add target=_blank rel="noopener noreferrer"
+       - Anchor-only links (#section): default behavior */ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $external := and $u.IsAbs (ne $u.Host (urls.Parse site.BaseURL).Host) -}}
+<a href="{{ .Destination | safeURL }}"
+   {{- with .Title }} title="{{ . | transform.HTMLEscape }}"{{ end }}
+   {{- if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- /**/ -}}

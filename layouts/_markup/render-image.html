@@ -1,0 +1,38 @@
+{{- /* Render hook for markdown images.
+       Extends PaperMod default with intrinsic width/height for local
+       images — reduces CLS (Cumulative Layout Shift) which is a Core
+       Web Vital. Remote URLs (imgbb leftovers, etc.) fall back to
+       just loading=lazy. */ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $src := $u.String -}}
+{{- $w := 0 -}}
+{{- $h := 0 -}}
+{{- if not $u.IsAbs -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path -}}
+  {{- /* PaperMod's pattern: try page bundle, then global resources. */ -}}
+  {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
+    {{- $src = .RelPermalink -}}
+    {{- with $u.RawQuery -}}{{- $src = printf "%s?%s" $src . -}}{{- end -}}
+    {{- with $u.Fragment -}}{{- $src = printf "%s#%s" $src . -}}{{- end -}}
+    {{- /* GIF/SVG have no .Width in Hugo; guard with IsResource. */ -}}
+    {{- if and .ResourceType (eq .ResourceType "image") -}}
+      {{- if and .MediaType.SubType (ne .MediaType.SubType "svg") -}}
+        {{- $w = .Width -}}
+        {{- $h = .Height -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $base := dict "alt" .Text "src" $src "title" (.Title | transform.HTMLEscape) "loading" "lazy" "decoding" "async" -}}
+{{- $dims := dict -}}
+{{- if and $w $h -}}
+  {{- $dims = dict "width" (printf "%d" $w) "height" (printf "%d" $h) -}}
+{{- end -}}
+{{- $attributes := merge .Attributes $base $dims -}}
+<img
+  {{- range $k, $v := $attributes -}}
+    {{- if $v -}}
+      {{- printf " %s=%q" $k $v | safeHTMLAttr -}}
+    {{- end -}}
+  {{- end -}}>
+{{- /**/ -}}

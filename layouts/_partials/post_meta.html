@@ -2,7 +2,31 @@
        Adds an extra meta chip with the page view count, sourced from
        data/views.json (refreshed daily by fetch_ga_views.py).
        Falls through to the theme behavior for everything else. */ -}}
+{{- /* Category palette mirrors generate_og_images.py CATEGORY_COLORS
+       so the meta chip and OG card share the same color cue. */ -}}
+{{- $catColors := dict
+    "종목분석"      "#6c9afc"
+    "자동매매시스템" "#4ade80"
+    "시사이슈"      "#f87171"
+    "생활후기"      "#facc15"
+    "여행기술"      "#c084fc"
+-}}
 {{- $scratch := newScratch }}
+
+{{- /* Category chip — first category, linked, color-tinted.
+       Reads frontmatter directly because .GetTerms depends on the
+       singular/plural taxonomy key form and is fragile across Hugo
+       versions; .Params.categories is the raw list either way. */ -}}
+{{- if .IsPage -}}
+    {{- with index .Params.categories 0 -}}
+        {{- $name := . -}}
+        {{- $color := index $catColors $name | default "#9b9c9d" -}}
+        {{- $href := printf "/categories/%s/" (urlize $name) -}}
+        {{- $scratch.Add "meta" (slice (printf
+            "<a href='%s' class='post-meta-cat' style='background:%s;color:#1d1e20;padding:1px 8px;border-radius:10px;text-decoration:none;font-size:0.85em;'>%s</a>"
+            $href $color $name)) -}}
+    {{- end -}}
+{{- end }}
 
 {{- if not .Date.IsZero -}}
     {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default ":date_long" site.Params.DateFormat)))) }}
