@@ -49,8 +49,10 @@ params:
   homeInfoParams:
     Title: "tomworld에 오신 것을 환영합니다 👋"
     Content: >
-      일상의 이슈, 시사, 투자, 여행, 기술까지 — 매일 변하는 세상을
-      독자 여러분께 깊이 있게 전달하는 블로그입니다.
+      종목 분석은 차트와 실적으로, 시사·이슈는 사실 관계 위주로,
+      직접 만든 자동매매·모니터링 시스템 이야기와 캠핑·생활 후기까지 —
+      매일 부딪치며 정리한 글을 차곡차곡 쌓아가는 공간입니다.
+      [소개](/about/)에서 다루는 주제와 글 묶음을 한눈에 보실 수 있습니다.
 
   assets:
     disableHLJS: false
@@ -66,6 +68,10 @@ menu:
       name: 글
       url: /posts/
       weight: 10
+    - identifier: categories
+      name: 카테고리
+      url: /categories/
+      weight: 15
     - identifier: tags
       name: 태그
       url: /tags/
@@ -86,6 +92,11 @@ menu:
       name: 개인정보처리방침
       url: /privacy/
       weight: 60
+
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
 
 outputs:
   home:

@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -33,6 +33,24 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+          # token: GITHUB_TOKEN (default). Commits made with this token
+          # do NOT trigger downstream workflows, so the auto-label commit
+          # below won't recurse this workflow — by design.
+      - name: Auto-label posts (categorize + normalize tags)
+        run: |
+          python3 scripts/categorize_posts.py --quiet
+          python3 scripts/normalize_tags.py
+      - name: Commit auto-label changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet content/posts/; then
+            echo "No label changes."
+          else
+            git add content/posts/
+            git commit -m "chore: auto-label posts (categories/series/tags)"
+            git push
+          fi
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

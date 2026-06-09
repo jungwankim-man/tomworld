@@ -1,0 +1,22 @@
+{
+  "_comment": "Single source of truth for tag normalization. Loaded by both blog_hugo/scripts/normalize_tags.py and blog_automator/src/publisher/hugo.py. Edit here, both sides pick it up.",
+  "drop_tags": [
+    "KO",
+    "EN",
+    "Ko",
+    "En",
+    "ko",
+    "en"
+  ],
+  "aliases": {
+    "노후 인프라": "노후인프라",
+    "GTX 철근 누락": "GTX철근누락",
+    "서소문 고가도로 붕괴": "서소문고가차도",
+    "신세계불매": "신세계불매운동",
+    "PCB관련주": "PCB",
+    "PCB주": "PCB",
+    "PCB투자": "PCB",
+    "AI PCB": "PCB",
+    "AI서버PCB": "PCB"
+  }
+}

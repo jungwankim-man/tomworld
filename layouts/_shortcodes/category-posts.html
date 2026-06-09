@@ -1,0 +1,28 @@
+{{- /*
+  category-posts: list latest N posts in a category.
+
+  Usage in markdown:
+    {{< category-posts cat="종목분석" count="4" >}}
+
+  Params:
+    cat   — category name as stored in post frontmatter `categories:`.
+    count — optional; defaults to 4.
+*/ -}}
+{{- $cat := .Get "cat" -}}
+{{- $count := default 4 (int (.Get "count")) -}}
+{{- $pages := where site.RegularPages "Section" "posts" -}}
+{{- $pages = where $pages "Params.categories" "intersect" (slice $cat) -}}
+{{- $sorted := sort $pages "Date" "desc" -}}
+{{- $top := first $count $sorted -}}
+{{- if $top }}
+<ul class="category-posts">
+{{- range $top }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <span style="color: var(--secondary); font-size: 0.85em; margin-left: 0.4em;">{{ .Date.Format "2006-01-02" }}</span>
+  </li>
+{{- end }}
+</ul>
+{{- else }}
+<p><em>(아직 글이 없습니다.)</em></p>
+{{- end -}}
