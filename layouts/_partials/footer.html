@@ -21,6 +21,13 @@
             <span>·</span>
             <span>본문 라이선스: 출처 표기 시 인용 가능 (상업적 이용은 사전 협의)</span>
         </div>
+        {{- /* socialIcons is read from site.Params by social_icons.html
+               directly; we just need any param truthy to gate rendering. */ -}}
+        {{- if site.Params.socialIcons }}
+        <div class="footer-row footer-social">
+            {{- partial "social_icons.html" (dict "align" "left") -}}
+        </div>
+        {{- end }}
         <div class="footer-row footer-credits">
             Built with
             <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a>

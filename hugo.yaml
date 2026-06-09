@@ -32,6 +32,7 @@ params:
     - 캠핑
     - 생활기록
   defaultTheme: auto
+  disableLangToggle: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShareButtons:
@@ -47,6 +48,13 @@ params:
   TocOpen: false
   ShowRssButtonInSectionTermList: true
   comments: true
+  socialIcons:
+    - name: github
+      url: "https://github.com/jungwankim-man"
+    - name: email
+      url: "mailto:pzi0821@gmail.com"
+    - name: rss
+      url: "/index.xml"
   # giscus: GitHub Discussions-based comments. Activate by filling
   # repoId/categoryId from https://giscus.app after enabling
   # Discussions on github.com/jungwankim-man/tomworld and installing

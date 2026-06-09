@@ -86,4 +86,8 @@
     width: 140px; outline: none;
 }
 .header-search input:focus { border-color: var(--primary); }
+/* Mobile: hide the header search input (already in nav as /search/ link). */
+@media (max-width: 700px) {
+    .header-search { display: none; }
+}
 </style>
