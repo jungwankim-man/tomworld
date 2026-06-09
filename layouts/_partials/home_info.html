@@ -1,0 +1,19 @@
+{{- /* Site override of PaperMod's home_info.html.
+       Adds a "🔥 인기 글" section below the welcome copy, sourced from
+       data/views.json (refreshed daily by fetch_ga_views). Cosmetic
+       partial; degrades silently when no data is available. */ -}}
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content md-content">
+        {{ $opts := dict "display" "block" }}
+        {{ .Content | $.Page.RenderString $opts }}
+    </div>
+    {{- partial "popular_posts.html" $.Page -}}
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}

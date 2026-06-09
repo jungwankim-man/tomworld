@@ -1,0 +1,48 @@
+{{- /* Render top-N posts by cumulative PV from data/views.json.
+       Filters to /posts/* paths only, joins each path to its Page so
+       we can render title + permalink. Silently no-ops when data is
+       missing or there are no eligible posts. */ -}}
+{{- $top := 5 -}}
+{{- $views := site.Data.views | default dict -}}
+
+{{- /* Build [{path, pv}] excluding _meta and non-post paths. */ -}}
+{{- $items := slice -}}
+{{- range $path, $pv := $views -}}
+    {{- if and (ne $path "_meta") (hasPrefix $path "/posts/") (ne $path "/posts/") (gt (printf "%v" $pv | int) 0) -}}
+        {{- $items = $items | append (dict "path" $path "pv" (printf "%v" $pv | int)) -}}
+    {{- end -}}
+{{- end -}}
+
+{{- /* Sort desc by pv, take top N, resolve each to a Page. */ -}}
+{{- $items = sort $items "pv" "desc" -}}
+{{- $items = first $top $items -}}
+
+{{- $resolved := slice -}}
+{{- range $items -}}
+    {{- $p := site.GetPage .path -}}
+    {{- if $p -}}
+        {{- $resolved = $resolved | append (dict "page" $p "pv" .pv) -}}
+    {{- end -}}
+{{- end -}}
+
+{{- with $resolved }}
+<section class="popular-posts" aria-label="자주 찾는 글">
+    <h3 class="popular-posts-title">자주 찾는 글</h3>
+    <ol class="popular-posts-list">
+        {{- range . }}
+        <li>
+            <a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a>
+            <span class="popular-posts-pv">조회 {{ lang.FormatNumber 0 .pv }}</span>
+        </li>
+        {{- end }}
+    </ol>
+</section>
+<style>
+.popular-posts { margin-top: var(--gap); padding-top: var(--gap); border-top: 1px solid var(--border); }
+.popular-posts-title { margin: 0 0 calc(var(--gap) / 2) 0; font-size: 1.05em; }
+.popular-posts-list { margin: 0; padding-left: 1.4em; }
+.popular-posts-list li { margin: 0.35em 0; }
+.popular-posts-list a { color: var(--primary); }
+.popular-posts-pv { margin-left: 0.5em; color: var(--secondary); font-size: 0.85em; }
+</style>
+{{- end -}}

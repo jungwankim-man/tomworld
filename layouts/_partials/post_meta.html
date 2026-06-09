@@ -1,0 +1,37 @@
+{{- /* Site override of PaperMod's post_meta.html.
+       Adds an extra meta chip with the page view count, sourced from
+       data/views.json (refreshed daily by fetch_ga_views.py).
+       Falls through to the theme behavior for everything else. */ -}}
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+    {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default ":date_long" site.Params.DateFormat)))) }}
+{{- end }}
+
+{{- if (.Param "ShowReadingTime") -}}
+    {{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime)))) }}
+{{- end }}
+
+{{- if (.Param "ShowWordCount") -}}
+    {{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "words" .WordCount | default (printf "%d words" .WordCount)))) }}
+{{- end }}
+
+{{- if not (.Param "hideAuthor") -}}
+    {{- with (partial "author.html" .) }}
+        {{- $scratch.Add "meta" (slice (printf "<span>%s</span>" .)) }}
+    {{- end }}
+{{- end }}
+
+{{- /* View count chip — only on single post pages, only when data exists. */ -}}
+{{- if and .IsPage (eq .Kind "page") -}}
+    {{- /* Only show chip once a post has meaningful traffic — sub-5
+           views look small/sad and discourage scroll. */ -}}
+    {{- $views := index site.Data.views .RelPermalink | default 0 -}}
+    {{- if ge $views 5 -}}
+        {{- $scratch.Add "meta" (slice (printf "<span title='누적 조회수'>조회 %s</span>" (lang.FormatNumber 0 $views))) }}
+    {{- end -}}
+{{- end -}}
+
+{{- with ($scratch.Get "meta") }}
+    {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+{{- end -}}
