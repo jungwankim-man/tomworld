@@ -1,0 +1,21 @@
+{{- define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title" style="font-size:3rem;margin-bottom:0.4em">404</h1>
+    <div class="post-description">찾으시는 페이지가 없어요.</div>
+  </header>
+
+  <div class="post-content md-content">
+    <p>주소가 바뀌었거나, 글이 옮겨졌을 수 있습니다. 아래에서 원하시는 글을 찾아보세요.</p>
+
+    <ul style="line-height:2">
+      <li><a href="/">🏠 홈으로 가기</a></li>
+      <li><a href="/posts/">📄 전체 글 목록</a></li>
+      <li><a href="/categories/">🗂 카테고리별 보기</a></li>
+      <li><a href="/subscribe/">📡 RSS로 구독</a></li>
+    </ul>
+
+    {{- partial "popular_posts.html" . -}}
+  </div>
+</article>
+{{- end }}
