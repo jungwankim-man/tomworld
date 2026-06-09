@@ -39,6 +39,7 @@ params:
   ShowCodeCopyButtons: true
   ShowToc: true
   TocOpen: false
+  ShowRssButtonInSectionTermList: true
   comments: false
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -81,6 +82,10 @@ menu:
       name: 아카이브
       url: /archives/
       weight: 30
+    - identifier: subscribe
+      name: 구독
+      url: /subscribe/
+      weight: 35
     - identifier: about
       name: 소개
       url: /about/
