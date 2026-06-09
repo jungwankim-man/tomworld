@@ -1,0 +1,54 @@
+{{- /* Site override of PaperMod's search.html.
+       Adds:
+       - Korean placeholder via .Params.placeholder
+       - sessionStorage pickup so header search input forwards a term
+         here and the page autofocuses + auto-searches */ -}}
+{{- define "main" }}
+
+<header class="page-header">
+    <h1>{{- (printf "%s&nbsp;" .Title) | htmlUnescape -}}
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">{{ .Description }}</div>
+    {{- end }}
+</header>
+
+<div id="searchbox" class="searchbox">
+    <input id="searchInput" disabled placeholder="{{ .Params.placeholder | default "검색…" }}"
+        aria-label="검색" type="search" autocomplete="off" maxlength="64">
+    <ul id="searchResults" class="searchResults" aria-label="검색 결과"></ul>
+</div>
+
+<script>
+(function () {
+    // Pull a forwarded search term off sessionStorage (set by the
+    // header search input) and prime the page's search box with it.
+    // The theme's fastsearch.js binds on keyup, so we both set the
+    // value and dispatch an input/keyup event after it enables.
+    var key = 'tomworld_search_q';
+    var q = null;
+    try { q = sessionStorage.getItem(key); } catch (_) {}
+    if (!q) return;
+    try { sessionStorage.removeItem(key); } catch (_) {}
+    var tries = 0;
+    var iv = setInterval(function () {
+        var el = document.getElementById('searchInput');
+        if (el && !el.disabled) {
+            clearInterval(iv);
+            el.value = q;
+            el.focus();
+            el.dispatchEvent(new Event('input', { bubbles: true }));
+            el.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true }));
+        } else if (++tries > 50) {
+            clearInterval(iv);
+        }
+    }, 100);
+})();
+</script>
+
+{{- end }}

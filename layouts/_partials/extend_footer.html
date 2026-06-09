@@ -1,0 +1,30 @@
+{{- /* Site override of PaperMod's extend_footer.html.
+       Localizes hard-coded English aria-labels to Korean after DOM
+       is ready. Cheaper than re-overriding three theme templates. */ -}}
+<script>
+(function () {
+    // go-to-top link
+    var topLink = document.getElementById('top-link');
+    if (topLink) {
+        topLink.setAttribute('aria-label', '맨 위로');
+        topLink.setAttribute('title', '맨 위로 (Alt + G)');
+    }
+    // entry-link "post link to <title>" → 그냥 제목으로
+    document.querySelectorAll('a.entry-link[aria-label^="post link to "]').forEach(function (a) {
+        var t = a.getAttribute('aria-label').replace(/^post link to /, '');
+        a.setAttribute('aria-label', t);
+    });
+    // share buttons "share <title> on <platform>" → "<platform>에 공유"
+    var plat = {
+        x: 'X', linkedin: 'LinkedIn', facebook: 'Facebook',
+        telegram: '텔레그램', reddit: 'Reddit'
+    };
+    document.querySelectorAll('ul.share-buttons a[aria-label^="share "]').forEach(function (a) {
+        var m = a.getAttribute('aria-label').match(/ on (\w+)$/);
+        if (m) {
+            var name = plat[m[1].toLowerCase()] || m[1];
+            a.setAttribute('aria-label', name + '에 공유');
+        }
+    });
+})();
+</script>
