@@ -1,5 +1,6 @@
 ---
 title: "Hantaan Virus Spread on Cruise Ships: 5 Must-Know Prevention Tips Before Your 2026 Summer Travel"
+description: "As summer vacation season approaches, the term \"Hantaan virus\" has been circulating uneasily among those planning cruise trips."
 date: 2026-05-27T19:31:42+09:00
 draft: false
 categories: ["여행기술"]

@@ -1,5 +1,6 @@
 ---
 title: "6·3 Local Elections: A Razor-Thin Seoul Mayoral Race! Jung Won-oh vs. Oh Se-hoon Full Breakdown (Latest, D-12)"
+description: "\"The race flipped in just two weeks.\" That's the line people keep repeating ahead of the Seoul mayoral race in the June 3 local elections."
 date: 2026-05-27T19:49:47+09:00
 draft: false
 categories: ["시사이슈"]

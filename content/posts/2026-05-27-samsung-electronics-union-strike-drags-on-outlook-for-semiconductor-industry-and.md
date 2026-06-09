@@ -1,5 +1,6 @@
 ---
 title: "Samsung Electronics Union Strike Drags On: Semiconductor Industry and Stock Price Shock Outlook (2026 Update)"
+description: "\"Will the Samsung Electronics stock I'm holding actually go up once the strike ends?\" That's the most common question I see in stock communities these days."
 date: 2026-05-27T19:49:11+09:00
 draft: false
 categories: ["시사이슈"]
