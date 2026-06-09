@@ -33,7 +33,13 @@ params:
     - 생활기록
   defaultTheme: auto
   ShowReadingTime: true
-  ShowShareButtons: false
+  ShowShareButtons: true
+  ShareButtons:
+    - x
+    - linkedin
+    - facebook
+    - telegram
+    - reddit
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
@@ -74,6 +80,10 @@ menu:
       name: 카테고리
       url: /categories/
       weight: 15
+    - identifier: search
+      name: 검색
+      url: /search/
+      weight: 17
     - identifier: tags
       name: 태그
       url: /tags/

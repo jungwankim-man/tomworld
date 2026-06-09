@@ -4,7 +4,7 @@ description: "푸바오가 할부지를 알아본 그 순간을 떠올려 봅니
 date: 2026-06-06T09:00:00+09:00
 draft: false
 categories: ["종목분석"]
-tags: ["HMM 주가", "HMM 종목분석", "011200", "해운주", "컨테이너 운임", "북극항로", "저평가주", "투자일기"]
+tags: ["HMM", "011200", "해운주", "컨테이너 운임", "북극항로", "저평가주", "투자일기"]
 ---
 {{< figure src="/images/posts/hmm-fubao/grandpa-reunion.gif" alt="푸바오가 할부지를 알아본 그 순간" align="center" >}}
 

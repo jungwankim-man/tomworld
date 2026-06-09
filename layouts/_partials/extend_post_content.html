@@ -2,4 +2,5 @@
        Use it to inject related-posts block on single pages only. */ -}}
 {{- if and .IsPage (eq .Section "posts") -}}
     {{- partial "related_posts.html" . -}}
+    {{- partial "subscribe_cta.html" . -}}
 {{- end -}}

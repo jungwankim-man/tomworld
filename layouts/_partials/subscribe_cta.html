@@ -1,0 +1,41 @@
+{{- /* Compact subscribe CTA shown below related-posts on every post. */ -}}
+{{- if and .IsPage (eq .Section "posts") -}}
+<aside class="subscribe-cta" aria-label="구독 안내">
+    <div class="subscribe-cta-text">
+        <strong>이 글이 도움이 되셨다면</strong><br>
+        새 글을 RSS로 받아 보시거나, 카테고리별로 골라 구독하실 수 있습니다.
+    </div>
+    <div class="subscribe-cta-actions">
+        <a class="subscribe-cta-btn primary" href="/subscribe/">📡 구독하기</a>
+        <a class="subscribe-cta-btn" href="/posts/">📄 다른 글 보기</a>
+    </div>
+</aside>
+<style>
+.subscribe-cta {
+    margin: calc(var(--gap) * 1.2) 0 0 0;
+    padding: var(--gap);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--code-bg);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribe-cta-text { flex: 1 1 280px; color: var(--content); line-height: 1.6; }
+.subscribe-cta-actions { display: flex; gap: 0.5em; flex-shrink: 0; }
+.subscribe-cta-btn {
+    padding: 0.55em 1em;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--theme);
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.92em;
+    white-space: nowrap;
+}
+.subscribe-cta-btn.primary { background: var(--primary); color: var(--theme); border-color: var(--primary); }
+.subscribe-cta-btn:hover { opacity: 0.85; }
+</style>
+{{- end -}}
