@@ -21,15 +21,16 @@ minify:
 params:
   env: production
   title: tomworld
-  description: "일상의 이슈, 시사, 투자, 여행, 기술까지 — 깊이 있게 다루는 tomworld 블로그"
+  description: "데이터로 받친 종목 분석과 직접 만든 자동매매 시스템 — 매일 부딪힌 것을 정리합니다"
   author: Jungwan Kim
+  hideAuthor: true
   keywords:
+    - 종목분석
+    - 자동매매
     - 시사
-    - 이슈
-    - 투자
-    - 여행
-    - 기술
-    - 생활정보
+    - 투자일기
+    - 캠핑
+    - 생활기록
   defaultTheme: auto
   ShowReadingTime: true
   ShowShareButtons: false
@@ -47,12 +48,12 @@ params:
   tocopen: false
 
   homeInfoParams:
-    Title: "tomworld에 오신 것을 환영합니다 👋"
+    Title: "데이터로 받친 글만 씁니다"
     Content: >
-      종목 분석은 차트와 실적으로, 시사·이슈는 사실 관계 위주로,
-      직접 만든 자동매매·모니터링 시스템 이야기와 캠핑·생활 후기까지 —
-      매일 부딪치며 정리한 글을 차곡차곡 쌓아가는 공간입니다.
-      [소개](/about/)에서 다루는 주제와 글 묶음을 한눈에 보실 수 있습니다.
+      종목 분석은 차트·실적·업황 3축으로, 시사는 사실관계 위주로.
+      직접 굴리는 자동매매 시스템과 매매 일지가 매일 쌓입니다.
+
+      → [전체 글](/posts/) · [소개](/about/)
 
   assets:
     disableHLJS: false
