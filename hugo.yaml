@@ -60,10 +60,10 @@ params:
   # Discussions on github.com/jungwankim-man/tomworld and installing
   # the giscus GitHub App. Until repo is set, the partial no-ops.
   giscus:
-    repo: ""              # e.g. "jungwankim-man/tomworld"
-    repoId: ""            # from giscus.app
+    repo: "jungwankim-man/tomworld"
+    repoId: "R_kgDOSpNH8w"
     category: "General"
-    categoryId: ""        # from giscus.app
+    categoryId: "DIC_kwDOSpNH884C-zrZ"
     mapping: "pathname"
   disableSpecial1stPost: false
   disableScrollToTop: false
