@@ -1,0 +1,42 @@
+{{- /* Site override of PaperMod's post_nav_links.html.
+       Renders prev/next as small thumbnail cards using the
+       auto-generated /og-images/<slug>.png as the visual cue. */ -}}
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- if and (gt (len $pages) 1) (in $pages .) }}
+<nav class="paginav-cards">
+  {{- with $pages.Next . }}
+    {{- $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) }}
+    <a class="paginav-card prev" href="{{ .Permalink }}">
+      <img loading="lazy" src="/og-images/{{ $slug }}.png" alt="" width="120" height="63">
+      <div class="paginav-meta">
+        <span class="paginav-dir">« 이전 글</span>
+        <span class="paginav-title">{{ .Title }}</span>
+      </div>
+    </a>
+  {{- end }}
+  {{- with $pages.Prev . }}
+    {{- $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) }}
+    <a class="paginav-card next" href="{{ .Permalink }}">
+      <div class="paginav-meta">
+        <span class="paginav-dir">다음 글 »</span>
+        <span class="paginav-title">{{ .Title }}</span>
+      </div>
+      <img loading="lazy" src="/og-images/{{ $slug }}.png" alt="" width="120" height="63">
+    </a>
+  {{- end }}
+</nav>
+<style>
+.paginav-cards { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); margin: var(--gap) 0; }
+.paginav-card { display: flex; gap: 0.8em; align-items: center; padding: 0.7em; border: 1px solid var(--border); border-radius: var(--radius); background: var(--code-bg); text-decoration: none; color: var(--primary); }
+.paginav-card:hover { border-color: var(--primary); }
+.paginav-card.next { text-align: right; }
+.paginav-card img { width: 120px; height: 63px; object-fit: cover; border-radius: calc(var(--radius) / 2); flex-shrink: 0; }
+.paginav-meta { display: flex; flex-direction: column; gap: 0.2em; min-width: 0; flex: 1; }
+.paginav-dir { font-size: 0.75em; color: var(--secondary); }
+.paginav-title { font-weight: 600; font-size: 0.92em; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+@media (max-width: 600px) {
+  .paginav-cards { grid-template-columns: 1fr; }
+  .paginav-card.next { text-align: left; flex-direction: row-reverse; }
+}
+</style>
+{{- end }}

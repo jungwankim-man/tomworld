@@ -1,1 +1,33 @@
+{{- /* Site-wide head extensions: search-console verification +
+       small CSS additions that don't justify a stylesheet on their own. */ -}}
 <meta name="naver-site-verification" content="936247477ef4b4a235819d390198eab782b7521d" />
+
+{{- /* PWA manifest — added 2026-06-09 so iOS/Android can save the
+       site to the home screen with a proper name/icon. */ -}}
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1d1e20">
+<meta name="apple-mobile-web-app-title" content="tomworld">
+
+<style>
+/* Dropcap on first paragraph of single posts. Skipped on lists,
+   skipped if the first block is a figure/shortcode (which produces
+   a div, not a p). Korean-friendly metrics (no over-extend). */
+.post-single .post-content > p:first-of-type::first-letter {
+    initial-letter: 2.5;
+    -webkit-initial-letter: 2.5;
+    font-weight: 700;
+    color: var(--primary);
+    margin-right: 0.12em;
+    padding-right: 0.08em;
+    line-height: 1;
+}
+/* Safari/Firefox fallback when initial-letter isn't supported. */
+@supports not (initial-letter: 2) {
+    .post-single .post-content > p:first-of-type::first-letter {
+        float: left;
+        font-size: 3.2em;
+        line-height: 0.9;
+        margin: 0.05em 0.1em 0 0;
+    }
+}
+</style>

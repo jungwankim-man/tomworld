@@ -1,0 +1,24 @@
+{
+  "name": "tomworld",
+  "short_name": "tomworld",
+  "description": "데이터로 받친 종목 분석과 직접 만든 자동매매 시스템 — 매일 부딪힌 것을 정리합니다",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "background_color": "#1d1e20",
+  "theme_color": "#1d1e20",
+  "lang": "ko-KR",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

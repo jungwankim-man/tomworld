@@ -46,7 +46,17 @@ params:
   ShowToc: true
   TocOpen: false
   ShowRssButtonInSectionTermList: true
-  comments: false
+  comments: true
+  # giscus: GitHub Discussions-based comments. Activate by filling
+  # repoId/categoryId from https://giscus.app after enabling
+  # Discussions on github.com/jungwankim-man/tomworld and installing
+  # the giscus GitHub App. Until repo is set, the partial no-ops.
+  giscus:
+    repo: ""              # e.g. "jungwankim-man/tomworld"
+    repoId: ""            # from giscus.app
+    category: "General"
+    categoryId: ""        # from giscus.app
+    mapping: "pathname"
   disableSpecial1stPost: false
   disableScrollToTop: false
   hidemeta: false

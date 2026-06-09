@@ -1,0 +1,50 @@
+{{- /* Site override of PaperMod's footer.html.
+       한글 카피 + 운영 정보 + 라이선스. PaperMod/Hugo 크레딧 유지. */ -}}
+{{- if not (.Param "hideFooter") }}
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-row">
+            <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">tomworld</a></span>
+            <span>·</span>
+            <a href="/about/">소개</a>
+            <span>·</span>
+            <a href="/contact/">문의</a>
+            <span>·</span>
+            <a href="/subscribe/">구독</a>
+            <span>·</span>
+            <a href="/changelog/">변경 이력</a>
+            <span>·</span>
+            <a href="/privacy/">개인정보</a>
+        </div>
+        <div class="footer-row footer-meta">
+            <span>운영자: <a href="mailto:pzi0821@gmail.com">Jungwan Kim</a></span>
+            <span>·</span>
+            <span>본문 라이선스: 출처 표기 시 인용 가능 (상업적 이용은 사전 협의)</span>
+        </div>
+        <div class="footer-row footer-credits">
+            Built with
+            <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a>
+            &amp;
+            <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        </div>
+    </div>
+</footer>
+<style>
+.footer .footer-inner { display: flex; flex-direction: column; gap: 0.4em; max-width: var(--main-width); margin: 0 auto; padding: calc(var(--gap) / 1.5) var(--gap); }
+.footer .footer-row { display: flex; flex-wrap: wrap; gap: 0.4em 0.5em; align-items: center; font-size: 0.85em; color: var(--secondary); }
+.footer .footer-row a { color: var(--secondary); border-bottom: none; }
+.footer .footer-row a:hover { color: var(--primary); }
+.footer .footer-meta { font-size: 0.8em; opacity: 0.85; }
+.footer .footer-credits { font-size: 0.75em; opacity: 0.7; }
+</style>
+{{- end }}
+
+{{- if (not site.Params.disableScrollToTop) }}
+<a href="#top" id="top-link" class="top-link hidden" aria-label="맨 위로" title="맨 위로 (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+{{- end }}
