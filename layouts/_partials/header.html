@@ -2,7 +2,8 @@
        input that submits to /search/ via sessionStorage. PaperMod's
        fastsearch.js has no querystring support so we plant the term
        in sessionStorage and the search page picks it up + dispatches
-       an input event. Everything else mirrors the theme verbatim. */ -}}
+       an input event. Other markup mirrors the theme so PaperMod CSS
+       (id=menu .menu, .logo, .logo-switches) keeps applying. */ -}}
 <header class="header">
     <nav class="header-nav">
         <div class="logo">
@@ -38,13 +39,12 @@
         </div>
 
         {{- $currentPage := . }}
-        <ul id="menu" aria-label="주 메뉴">
+        <ul id="menu" class="menu" aria-label="주 메뉴">
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
-            {{- $page_url:= $currentPage.Permalink | absLangURL }}
-            {{- $is_search := eq (.Identifier | default "") "search" }}
+            {{- $page_url := $currentPage.Permalink | absLangURL }}
             <li>
-                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond (reflect.IsMap .Params) (printf "(%s)" (.Params.accesskey | default "")) "" }}" {{- with .Params.accesskey }} accesskey="{{ . }}"{{ end }}>
+                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
                     <span {{- if eq $menu_item_url $page_url }} class="active"{{ end }}>
                         {{- .Pre }}{{ .Name }}{{ .Post -}}
                     </span>
@@ -79,14 +79,15 @@
 })();
 </script>
 <style>
-.header-search { margin-left: 0.5em; display: flex; align-items: center; }
+/* The search input lives inside #menu as an <li>; PaperMod's menu
+   CSS handles flex layout, we just style the input itself. */
+.header-search { display: flex; align-items: center; }
 .header-search input {
     padding: 4px 10px; border-radius: 16px; border: 1px solid var(--border);
     background: var(--theme); color: var(--primary); font-size: 0.85em;
     width: 140px; outline: none;
 }
 .header-search input:focus { border-color: var(--primary); }
-/* Mobile: hide the header search input (already in nav as /search/ link). */
 @media (max-width: 700px) {
     .header-search { display: none; }
 }
