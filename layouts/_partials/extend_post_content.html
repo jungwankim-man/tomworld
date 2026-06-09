@@ -3,4 +3,33 @@
 {{- if and .IsPage (eq .Section "posts") -}}
     {{- partial "related_posts.html" . -}}
     {{- partial "subscribe_cta.html" . -}}
+    {{- /* Client-side: wrap "(NNNNNN)" 6-digit stock codes in post-content
+           with a link to /tags/<code>/. Pure DOM walk, no deps, ~600 bytes. */ -}}
+    <script>
+    (function () {
+      var root = document.querySelector('.post-content');
+      if (!root) return;
+      var RX = /\((\d{6})\)/g;
+      var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+        acceptNode: function (n) {
+          if (!RX.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+          RX.lastIndex = 0;
+          var p = n.parentNode;
+          if (!p || p.closest('a, code, pre')) return NodeFilter.FILTER_REJECT;
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      });
+      var nodes = [], n;
+      while ((n = walker.nextNode())) nodes.push(n);
+      nodes.forEach(function (node) {
+        var html = node.nodeValue.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+        html = html.replace(/\((\d{6})\)/g, function (_, code) {
+          return '(<a href="/tags/' + code + '/" class="stock-code">' + code + '</a>)';
+        });
+        var span = document.createElement('span');
+        span.innerHTML = html;
+        node.parentNode.replaceChild(span, node);
+      });
+    })();
+    </script>
 {{- end -}}

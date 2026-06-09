@@ -1,0 +1,26 @@
+{{- /* Site override of PaperMod's cover.html.
+       Adds a graceful fallback: if Params.cover.image is unset and
+       we're rendering a post in a LIST context (first-entry or
+       post-entry on home/category/etc), use the auto-generated
+       /og-images/<slug>.png so cards aren't text-only.
+       Single pages keep their existing behavior (no inline duplicate
+       of the OG card above the title). */ -}}
+{{- with .cxt }}
+
+{{- /* Theme default path — honored whenever an explicit cover exists. */ -}}
+{{- if (and .Params.cover.image (not $.isHidden)) -}}
+    {{- partial "cover_theme.html" $ -}}
+
+{{- /* Fallback: list view of a post → use OG image card. */ -}}
+{{- else if and (not $.IsSingle) (not $.isHidden) (eq .Section "posts") -}}
+    {{- $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) -}}
+    {{- $og := printf "/og-images/%s.png" $slug -}}
+    <figure class="entry-cover">
+        <a href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
+            <img loading="lazy" src="{{ $og | absURL }}" width="1200" height="630"
+                 alt="{{ .Title | plainify }}" style="aspect-ratio:1200/630;object-fit:cover;width:100%;height:auto;">
+        </a>
+    </figure>
+{{- end -}}
+
+{{- end -}}
