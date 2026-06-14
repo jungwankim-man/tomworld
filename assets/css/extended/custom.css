@@ -1,0 +1,10 @@
+/* User request (2026-06-14): clearer separation before section headings.
+   Default PaperMod heading top margin is 24px; ~2x it so each new section
+   (h2) gets an obvious gap from the preceding block. */
+.post-content h2 {
+    margin-top: 48px;
+}
+
+.post-content h3 {
+    margin-top: 36px;
+}
