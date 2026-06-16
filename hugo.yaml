@@ -91,7 +91,7 @@ params:
   # Google AdSense — fill `client` with the ca-pub-XXXXXXXXXXXXXXXX issued
   # at AdSense signup. Empty = no AdSense script emitted (see extend_head.html).
   adsense:
-    client: ""
+    client: "ca-pub-3724310991533599"
 
 menu:
   main:
