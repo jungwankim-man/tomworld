@@ -10,7 +10,7 @@
 5. 매일 09:00 KST `blog-daily-ga-report`이 전일 GA 수치를 Slack #일상에 발송 ([[blog_daily_ga_report]])
 
 **구성요소**:
-- `content/posts/` — 발행된 글 33개 (06-05 기준)
+- `content/posts/` — 발행된 글 44개 (06-16 기준)
 - `content/{about,archives,contact,privacy}.md` — AdSense 사전 작업으로 추가한 사이트 페이지
 - `themes/PaperMod` — submodule
 - `static/images/` — 게시 이미지 (136MB, GitHub Pages가 호스트)
@@ -24,6 +24,26 @@
 - 태그/카테고리 정규화 → 발견성 보호 (아래 06-09 항목)
 
 ## 최근 업데이트
+
+### 2026-06-16 — Google AdSense 신청 (저작권 이미지 정리 + 코드 활성화)
+
+신청 전 점검 결과 정책 페이지(privacy/about/contact)는 이미 완비. 실질 리스크는 **저작권 스크랩 이미지**였음.
+
+#### 1) 저작권 스크랩 이미지 전수 제거 (commit `67cfcf7`)
+- imgbb 재업로드 뉴스/애니 사진(URL filename `src-*`) 21개 + 로컬 `src-*` 5개 + `_출처:` 캡션 제거
+- `*이미지 출처:*` 푸터 36개 글에서 제거, 본문 노출된 미처리 `IMAGE: ...` AI 프롬프트 16줄(3개 글) 제거
+- **AI 생성본**(imgbb `gen-*`/`real-*`/`i2i-*` 65개)·**Pexels**(105개)는 유지 — 라이브 200 확인. 저작권 문제 없음
+- [[image_gen_minimize_text]] 블로그 저작권 규칙을 발행 콘텐츠에 실제 적용한 셈
+
+#### 2) AdSense 코드 배선 + 활성화 (commit `e3ae3d8`)
+- `layouts/_partials/extend_head.html`에 config 기반 주입: `{{ with .Site.Params.adsense.client }}` → `<head>` adsbygoogle 스크립트
+- `hugo.yaml` `params.adsense.client = "ca-pub-3724310991533599"` 주입
+- `static/ads.txt` 생성: `google.com, pub-3724310991533599, DIRECT, f08c47fec0942fa0`
+- 라이브 검증: `<head>` 스크립트 + `/ads.txt` 200 OK
+
+#### 남은 단계
+- 사용자가 AdSense 콘솔에서 **"검토 요청"** 클릭 → 심사 대기(수일~수주). 승인 후 자동 광고 on
+- 관련 메모리 [[blog_adsense_application]], [[launchd_adsense_reminder]]
 
 ### 2026-06-09 — 콘텐츠 발견성 대공사: 카테고리/시리즈 taxonomy + 태그 정규화 + SoT 통합
 
