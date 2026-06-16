@@ -13,8 +13,6 @@ What you'll learn from this post:
 ✅ Where the real battleground lies as voter sentiment splits by generation and region
 ✅ The last-minute variables that could swing the result over the remaining 12 days
 ## 1. The Race That Flipped in Two Weeks — Start With the Polling Trend
-![1. The Race That Flipped in Two Weeks — Start With the Polling Trend](https://i.ibb.co/JgXMb32/src-b6ff9d05.jpg)
-_출처: [image.ajunews.com](https://image.ajunews.com/content/image/2026/05/22/20260522171817172675.jpg)_
 The single keyword for this election is, without question, "dead heat." That's because the mood in early May and mid-May couldn't be more different.
 Here's how the polling flow breaks down by point in time:
 | Timing | Reported Race Trend | Mood |
@@ -26,8 +24,6 @@ The key point is that results differ from one polling firm to another. Even poll
 > 💡 Key Tip: When reading a poll, always check the polling firm, survey dates, and sampling error together. You can verify the exact figures yourself on the website of the National Election Survey Deliberation Commission.
 > 💡 Key Point: Through May, a clear lead narrowed into a tossup within the margin of error, making the outcome virtually impossible to predict.
 ## 2. Jung Won-oh vs. Oh Se-hoon — The Two Candidates' Profiles at a Glance
-![2. Jung Won-oh vs. Oh Se-hoon — The Two Candidates' Profiles at a Glance](https://i.ibb.co/PG3XQGjL/src-3b5d2918.jpg)
-_출처: [wimg.heraldcorp.com](https://wimg.heraldcorp.com/news/cms/2026/05/22/rcv.YNA.20260521.PYH2026052122050001300_P1.jpg)_
 The two candidates' résumés lay out the matchup perfectly. One is a veteran chasing a fourth term in office, the other a fresh face who came up as a district mayor.
 Here's a comparison of their core profiles:
 - Oh Se-hoon: The incumbent Seoul mayor. A win this time would put him on track for an unprecedented record — a fifth term as Seoul mayor. He's running on "stability and continuity."
@@ -36,8 +32,6 @@ Jung Won-oh, in particular, points to the transformation of Seongsu-dong as his 
 As a result, the contest is naturally hardening into a head-to-head over the candidates themselves: "the five-term legend vs. the first mayor to rise from a district office."
 > 💡 Key Point: The contrast between "Oh Se-hoon, experience and stability" and "Jung Won-oh, results and a fresh face" forms the basic frame of this election.
 ## 3. Signature Pledges Collide Head-On: "Commute" vs. "Housing"
-![3. Signature Pledges Collide Head-On: "Commute" vs. "Housing"](https://i.ibb.co/2xGGHrh/src-3f7ba582.jpg)
-_출처: [image.fnnews.com](https://image.fnnews.com/resource/media/image/2026/05/23/202605230841017291_l.jpg)_
 What voters feel most directly, in the end, are everyday-life pledges. And the two candidates' signature promises point in distinctly different directions.
 Here's a rundown of their flagship pledges:
 | Category | Jung Won-oh | Oh Se-hoon |
@@ -49,8 +43,6 @@ Jung Won-oh's "30-minute commuter city" is a vision to ensure that, wherever you
 Their housing pledges for young people and newlyweds clash, too. Both share the goal of "easing the burden of buying a home," but their methods differ — Jung Won-oh favors an equity-accumulation model that lets buyers build up assets bit by bit, while Oh Se-hoon backs a co-investment model in which the public sector invests alongside buyers.
 > 💡 Key Point: The difference in priorities — "transit and daily life" (Jung Won-oh) versus "housing and supply" (Oh Se-hoon) — defines each candidate's policy identity.
 ## 4. Voter Sentiment by Generation and Region — Here's the Real Battleground
-![4. Voter Sentiment by Generation and Region — Here's the Real Battleground](https://i.ibb.co/KpqRxgM3/src-8ae39604.png)
-_출처: [cdn.sisajournal.com](https://cdn.sisajournal.com/news/photo/202605/373852_381208_1034.png)_
 This election is likely to be decided by the generational divide, because the candidates' support bases split sharply by age group.
 Here's how the reported voter map breaks down:
 - Jung Won-oh's strength: Voters in their 40s and 50s — the core "everyday-life" generation grappling firsthand with their children's education and housing costs
@@ -83,4 +75,3 @@ https://www.fnnews.com/news/202605230609194454
 https://www.sisajournal.com/news/articleView.html?idxno=373852
 https://www.etoday.co.kr/news/view/2585930
 
-*이미지 출처: ajunews.com, biz.heraldcorp.com, fnnews.com, sisajournal.com, etoday.co.kr*

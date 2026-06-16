@@ -87,4 +87,3 @@ https://medium.com/@wutainfofu/building-a-real-time-equity-price-alert-system-wi
 https://deepcharts.substack.com/p/get-real-time-stock-drop-alerts-with
 https://wikidocs.net/91963
 
-*이미지 출처: tgparkk.github.io, blog.quantylab.com, i-whale.com, medium.com, deepcharts.substack.com, wikidocs.net*

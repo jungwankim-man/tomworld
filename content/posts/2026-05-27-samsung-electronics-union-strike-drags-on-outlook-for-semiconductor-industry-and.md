@@ -16,7 +16,6 @@ What you'll learn in this article:
 ✅ Three variables investors need to watch right now
 
 ## Core Issues and Background of the Strike
-![Core Issues and Background of the Strike](https://i.ibb.co/TDnJT8Z2/src-0814467e.jpg)
 _Source: [thumb.mt.co.kr](https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/05/2026052116065365651_1.jpg)_
 
 At its core, this strike isn't a simple wage hike dispute — it's a demand to overhaul the entire performance bonus calculation system. The union has strongly pushed to abolish the cap on the company's OPI (Overperformance Incentive) and to tie compensation to a fixed percentage of operating profit.

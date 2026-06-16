@@ -26,8 +26,6 @@ By contrast, the recent cruise ship outbreak was caused by Andes virus, which be
 Most people typing "Hantaan virus cruise" into the search bar are actually looking for information about the Andes virus outbreak — worth keeping in mind.
 > 💡 Key Point: Hantaan virus is native to Korea, while the cruise outbreak was caused by South America's Andes virus — same genus, different species.
 ## The Hondius Outbreak: What Actually Happened
-![The Hondius Outbreak: What Actually Happened](https://i.ibb.co/chMrtKWj/src-2b2740b8.jpg)
-_출처: [t1.daumcdn.net](https://t1.daumcdn.net/news/202605/10/551725-bDDlA7g/20260510010007525nvna.jpg)_
 In the spring of 2026, the Dutch expedition cruise ship MV Hondius, sailing through the South Atlantic and Antarctic region, saw a string of passengers and crew complaining of fever and respiratory distress. Tests came back positive for Andes virus.
 The reported figures are as follows:
 - Confirmed cases: 7
@@ -81,4 +79,3 @@ https://v.daum.net/v/20260510010006740
 https://www.youtube.com/watch?v=j3tAS9guOFQ
 https://namu.wiki/w/%ED%98%BC%EB%94%94%EC%9A%B0%EC%8A%A4%ED%98%B8%20%ED%95%9C%ED%83%80%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4%20%EC%A7%91%EB%8B%A8%20%EA%B0%90%EC%97%BC%20%EC%82%AC%EA%B1%B4
 
-*이미지 출처: kdca.go.kr, imnews.imbc.com, koreadaily.com, v.daum.net, youtube.com, namu.wiki*

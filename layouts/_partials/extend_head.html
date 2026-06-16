@@ -2,6 +2,13 @@
        small CSS additions that don't justify a stylesheet on their own. */ -}}
 <meta name="naver-site-verification" content="936247477ef4b4a235819d390198eab782b7521d" />
 
+{{- /* Google AdSense: verification + ad serving. Activates only once
+       params.adsense.client (ca-pub-XXXXXXXXXXXXXXXX) is filled in
+       hugo.yaml — set after AdSense signup hands over the publisher ID. */ -}}
+{{- with .Site.Params.adsense.client }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
+{{- end }}
+
 {{- /* PWA manifest — added 2026-06-09 so iOS/Android can save the
        site to the home screen with a proper name/icon. */ -}}
 <link rel="manifest" href="/site.webmanifest">

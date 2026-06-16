@@ -88,6 +88,11 @@ params:
     google:
       SiteVerificationTag: "N_Hi7B_I29TZ0IJI6XBLaDQzwyPBC4Q-87CaFhni7wI"
 
+  # Google AdSense — fill `client` with the ca-pub-XXXXXXXXXXXXXXXX issued
+  # at AdSense signup. Empty = no AdSense script emitted (see extend_head.html).
+  adsense:
+    client: ""
+
 menu:
   main:
     - identifier: posts
