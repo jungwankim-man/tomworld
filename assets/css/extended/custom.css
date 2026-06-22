@@ -1,10 +1,342 @@
-/* User request (2026-06-14): clearer separation before section headings.
-   Default PaperMod heading top margin is 24px; ~2x it so each new section
-   (h2) gets an obvious gap from the preceding block. */
-.post-content h2 {
-    margin-top: 48px;
+/* ============================================================
+   Tomworlds DS — PaperMod 이식 (2026-06-22)
+   DS 토큰(@tomworlds/ds, dist/ds.css)을 PaperMod 변수에 매핑하고
+   카드/표/인용/링크/뱃지/버튼을 iOS풍 DS 스타일로 통일한다.
+   React 컴포넌트는 정적 사이트에서 쓸 수 없어 토큰 + 클래스만 이식.
+   ============================================================ */
+
+/* ---- DS tokens (light) ---- */
+:root {
+    --ds-primary: #007aff;
+    --ds-primary-hover: #0066d6;
+    --ds-surface: #ffffff;
+    --ds-surface-2: #f2f2f7;
+    --ds-text: #1c1c1e;
+    --ds-text-muted: #8e8e93;
+    --ds-border: #d1d1d6;
+    --ds-radius-sm: 8px;
+    --ds-radius-md: 12px;
+    --ds-radius-lg: 18px;
+    --ds-radius-full: 999px;
+    --ds-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.04);
+    --ds-shadow-md: 0 8px 28px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.06);
+    --ds-focus-ring: 0 0 0 4px rgba(0, 122, 255, 0.30);
+    --ds-font-sans: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic",
+        -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
+        Helvetica, Arial, sans-serif;
+
+    /* PaperMod 변수 오버라이드 (extended가 theme-vars 뒤에 로드돼 우선) */
+    --theme: var(--ds-surface-2);
+    --entry: var(--ds-surface);
+    --primary: var(--ds-text);
+    --secondary: var(--ds-text-muted);
+    --tertiary: #e9e9eb;
+    --content: #2a2a2c;
+    --code-bg: var(--ds-surface-2);
+    --border: var(--ds-border);
+    --radius: var(--ds-radius-md);
 }
 
+/* ---- DS tokens (dark) ---- */
+:root[data-theme="dark"] {
+    --ds-primary: #0a84ff;
+    --ds-primary-hover: #409cff;
+    --ds-surface: #1c1c1e;
+    --ds-surface-2: #2c2c2e;
+    --ds-text: #ffffff;
+    --ds-text-muted: #98989f;
+    --ds-border: #38383a;
+    --ds-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --ds-shadow-md: 0 10px 30px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.4);
+    --ds-focus-ring: 0 0 0 4px rgba(10, 132, 255, 0.45);
+
+    --theme: #000000;
+    --entry: var(--ds-surface);
+    --primary: var(--ds-text);
+    --secondary: var(--ds-text-muted);
+    --tertiary: #2c2c2e;
+    --content: #e6e6ea;
+    --code-bg: var(--ds-surface-2);
+    --border: var(--ds-border);
+}
+
+body {
+    font-family: var(--ds-font-sans);
+}
+
+/* ---- Links ---- */
+.post-content a,
+.first-entry .entry-content a {
+    color: var(--ds-primary);
+    text-decoration-color: color-mix(in srgb, var(--ds-primary) 40%, transparent);
+    text-underline-offset: 3px;
+    transition: color 0.15s ease;
+}
+.post-content a:hover {
+    color: var(--ds-primary-hover);
+    text-decoration-color: currentColor;
+}
+
+/* ---- Home/list 카드: DS card ---- */
+.post-entry,
+.first-entry {
+    border: 1px solid var(--ds-border);
+    border-radius: var(--ds-radius-lg);
+    box-shadow: var(--ds-shadow-sm);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.post-entry:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--ds-shadow-md);
+    border-color: color-mix(in srgb, var(--ds-primary) 35%, var(--ds-border));
+}
+.entry-cover img,
+.entry-cover {
+    border-radius: var(--ds-radius-md);
+}
+
+/* ---- 본문 이미지 / 커버 ---- */
+.post-content img,
+.entry-cover img {
+    border-radius: var(--ds-radius-md);
+    box-shadow: var(--ds-shadow-sm);
+}
+.post-cover,
+.entry-cover {
+    border-radius: var(--ds-radius-lg);
+    overflow: hidden;
+}
+
+/* ---- 섹션 헤딩 (기존 간격 유지 + DS 구분선) ---- */
+.post-content h2 {
+    margin-top: 48px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--ds-border);
+    letter-spacing: -0.01em;
+}
 .post-content h3 {
     margin-top: 36px;
+    letter-spacing: -0.01em;
+}
+
+/* ---- 인용구 ---- */
+.post-content blockquote {
+    border-inline-start: 4px solid var(--ds-primary);
+    background: var(--ds-surface-2);
+    border-radius: var(--ds-radius-sm);
+    padding: 12px 18px;
+    margin-inline: 0;
+    color: var(--content);
+}
+
+/* ---- 표: DS card 톤 ---- */
+.post-content table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--ds-border);
+    border-radius: var(--ds-radius-md);
+    overflow: hidden;
+    box-shadow: var(--ds-shadow-sm);
+}
+.post-content table th {
+    background: var(--ds-surface-2);
+    font-weight: 700;
+    color: var(--ds-text);
+}
+.post-content table th,
+.post-content table td {
+    border: none;
+    border-bottom: 1px solid var(--ds-border);
+    padding: 10px 14px;
+}
+.post-content table tr:last-child td {
+    border-bottom: none;
+}
+.post-content table tbody tr:nth-child(even) {
+    background: color-mix(in srgb, var(--ds-surface-2) 55%, transparent);
+}
+
+/* ---- 인라인 코드 / 코드블록 ---- */
+.post-content code {
+    background: var(--ds-surface-2);
+    border-radius: var(--ds-radius-sm);
+    padding: 2px 6px;
+}
+.post-content pre {
+    border-radius: var(--ds-radius-md);
+}
+.post-content pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/* ---- 태그: DS badge(pill) ---- */
+.post-tags a,
+.terms-tags a {
+    background: var(--ds-surface-2);
+    border: 1px solid var(--ds-border);
+    border-radius: var(--ds-radius-full);
+    color: var(--ds-text-muted);
+    transition: all 0.15s ease;
+}
+.post-tags a:hover,
+.terms-tags a:hover {
+    background: var(--ds-primary);
+    border-color: var(--ds-primary);
+    color: #fff;
+}
+
+/* ---- 버튼류 / 페이지네이션 / TOC ---- */
+.pagination .page-link,
+.share-buttons a {
+    transition: color 0.15s ease, transform 0.15s ease;
+}
+.share-buttons a:hover {
+    transform: translateY(-2px);
+}
+.toc {
+    border: 1px solid var(--ds-border);
+    border-radius: var(--ds-radius-md);
+    background: var(--ds-surface);
+    box-shadow: var(--ds-shadow-sm);
+}
+.toc .details {
+    font-weight: 700;
+}
+
+/* ---- 접근성: DS focus ring ---- */
+a:focus-visible,
+button:focus-visible,
+.post-tags a:focus-visible {
+    outline: none;
+    box-shadow: var(--ds-focus-ring);
+    border-radius: var(--ds-radius-sm);
+}
+
+/* ---- 첫 글(hero) 제목 가독성 ---- */
+.first-entry .entry-header h1 {
+    letter-spacing: -0.02em;
+}
+
+/* ============================================================
+   Reading-quality pass (2026-06-22) — Brian Lovin / Josh Comeau
+   에서 7개 요소 차용. 강도는 "은은하게". 전부 기존 DS 토큰 재사용.
+   ============================================================ */
+
+/* (1) 본문 타이포 — 크고 넉넉하게 (Comeau) */
+.post-content {
+    font-size: 18px;
+    line-height: 1.75;
+}
+.post-content p {
+    margin: 1.3em 0;
+}
+
+/* (2) 글 읽기 폭 살짝 좁힘 (Lovin) — 단일 글 본문 한정 */
+.post-single .post-content {
+    max-width: 660px;
+    margin-inline: auto;
+}
+
+/* (3) 히어로 제목 — 은은한 그라데이션 텍스트 (Comeau) */
+.first-entry .entry-header h1 {
+    background: linear-gradient(
+        100deg,
+        var(--ds-text) 0%,
+        color-mix(in srgb, var(--ds-text) 78%, var(--ds-primary)) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* (4) 링크 — hover 시 언더라인이 채워지는 슬라이드 (Lovin) */
+.post-content a,
+.first-entry .entry-content a {
+    text-decoration: none;
+    background-image: linear-gradient(var(--ds-primary), var(--ds-primary));
+    background-size: 100% 1.5px;
+    background-repeat: no-repeat;
+    background-position: 0 calc(100% - 1px);
+    transition: color 0.15s ease, background-size 0.2s ease;
+}
+.post-content a:hover,
+.first-entry .entry-content a:hover {
+    background-size: 100% 2px;
+    background-position: 0 100%;
+}
+
+/* (5) 네비 현재 위치 강조 (Lovin)
+   PaperMod는 active를 <a> 안의 <span>에 건다: <a><span class="active">..</span></a> */
+#menu a {
+    transition: color 0.15s ease;
+}
+#menu a span.active {
+    position: relative;
+    color: var(--ds-primary);
+}
+#menu a span.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    background: var(--ds-primary);
+    border-radius: var(--ds-radius-full);
+}
+
+/* (6) 카드 모션 — spring easing + 다층 그림자 (Comeau) */
+.post-entry,
+.first-entry {
+    transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 0.32s ease, border-color 0.2s ease;
+}
+.post-entry:hover {
+    box-shadow: var(--ds-shadow-md),
+        0 16px 40px color-mix(in srgb, var(--ds-primary) 8%, transparent);
+}
+
+/* (7) 섹션 구분선 — 그라데이션 페이드 (Comeau) */
+.post-content h2 {
+    border-bottom: none;
+    background-image: linear-gradient(
+        90deg,
+        var(--ds-border) 0%,
+        color-mix(in srgb, var(--ds-border) 35%, transparent) 60%,
+        transparent 100%
+    );
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+}
+
+/* (보정 A) 660px 본문에서 표/코드블록만 전폭으로 풀기 — 투자 분석 글 대응 */
+.post-single .post-content table,
+.post-single .post-content pre,
+.post-single .post-content .highlight {
+    max-width: min(820px, 100%);
+    width: max-content;
+    margin-inline: auto;
+}
+.post-single .post-content table {
+    display: table; /* width:max-content가 table에서 깨지지 않게 */
+}
+/* 코드블록 내부 스크롤은 유지하되 폭만 넉넉히 */
+.post-single .post-content pre {
+    width: auto;
+    min-width: 100%;
+}
+
+/* (보정 B) 인라인 코드 — 브랜드 톤 (Comeau) */
+.post-content code {
+    color: color-mix(in srgb, var(--ds-primary) 88%, var(--ds-text));
+    background: color-mix(in srgb, var(--ds-primary) 8%, var(--ds-surface-2));
+    border: 1px solid color-mix(in srgb, var(--ds-primary) 14%, transparent);
+}
+/* 코드블록 내부 code는 위 톤 적용 제외(기존 transparent 유지) */
+.post-content pre code {
+    color: inherit;
+    background: transparent;
+    border: none;
 }
