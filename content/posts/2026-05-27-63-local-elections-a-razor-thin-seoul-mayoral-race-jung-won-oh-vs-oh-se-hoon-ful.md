@@ -62,7 +62,7 @@ Real estate, in particular, is a double-edged sword. Price instability could fue
 > 💡 Caution: Once the blackout period for publishing polls kicks in (six days before election day), official figures dry up. From that point on, be careful not to be swayed by "blind-spot information" from unknown sources.
 > 💡 Key Point: Real estate, debates, turnout, and negative campaigning — these four variables look set to be the final counterweights in a dead-heat race.
 ## Wrapping Up: An Election Where a Single Vote Carries the Most Weight
-![Wrapping Up: An Election Where a Single Vote Carries the Most Weight](https://i.ibb.co/mCKJS6qY/gen-00016.png)
+![Wrapping Up: An Election Where a Single Vote Carries the Most Weight](/images/posts/2026-05-27-63-local-elections-a-razor-thin-seoul-mayoral-race-jung-won-oh-vs-oh-se-hoon-ful/gen-00016.png)
 This Seoul mayoral race in the June 3 local elections is a contest where "Oh Se-hoon, chasing a fifth term" and "Jung Won-oh, the fresh face" square off within the margin of error — truly a race where a single vote could tip the result. Here's the gist once more:
 - The race shifted dramatically from a clear lead to a dead heat
 - The pledges contrast as "transit and daily life" vs. "housing and supply"

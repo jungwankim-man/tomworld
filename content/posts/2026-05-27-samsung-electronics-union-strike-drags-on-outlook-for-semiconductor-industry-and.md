@@ -37,7 +37,7 @@ Under the tentative agreement reached on May 20, a new "Special Management Perfo
 > 💡 Key point: This strike isn't a fight over "wages" — it's an institutional war over restructuring the performance bonus system.
 
 ## Semiconductor Industry and Supply Chain Shock
-![Semiconductor Industry and Supply Chain Shock](https://i.ibb.co/sdbDczzk/gen-00220.png)
+![Semiconductor Industry and Supply Chain Shock](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00220.png)
 
 Because semiconductor manufacturing is a continuous process, even a few hours of downtime can deal a direct blow to yield and quality. It's not uncommon for it to take several days to bring a cooled line back to normal operation.
 
@@ -55,7 +55,7 @@ Personally, I think HBM supply chain disruption is the most underestimated risk 
 > 💡 Key point: A prolonged strike isn't just one Korean company's problem — it's a variable for the entire global AI supply chain.
 
 ## Samsung Electronics Stock Scenarios and Foreign Investor Flows
-![Samsung Electronics Stock Scenarios and Foreign Investor Flows](https://i.ibb.co/JRHXXpYZ/gen-00221.png)
+![Samsung Electronics Stock Scenarios and Foreign Investor Flows](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00221.png)
 
 The stock has already shown major volatility. Right after the tentative agreement was announced on May 21, Samsung Electronics surged +8.51% to close at 299,500 won. It was the combined result of "negative news removal" and a "shift to foreign net buying."
 
@@ -74,7 +74,7 @@ Going forward, the possible scenarios can be broken into three:
 > 💡 Key point: The union ratification vote result is the first inflection point for the short-term stock price.
 
 ## Supplier Ecosystem and Global Ripple Effects
-![Supplier Ecosystem and Global Ripple Effects](https://i.ibb.co/v61CZB79/gen-00222.png)
+![Supplier Ecosystem and Global Ripple Effects](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00222.png)
 
 When Samsung Electronics alone comes to a halt, the shock cascades like dominoes: tier-1 suppliers → tier-2 suppliers → regional economies. Materials, parts, and equipment (MPE) firms clustered in Pyeongtaek, Hwaseong, Giheung, and Cheonan depend on Samsung for a substantial share of their revenue.
 
@@ -90,7 +90,7 @@ The global view has shifted quickly too. Bloomberg, Reuters, and Nikkei have iss
 > 💡 Key point: The real cost of the strike isn't paid by Samsung alone — it's paid jointly by thousands of suppliers and global customers.
 
 ## Three Things Investors Need to Check Right Now
-![Three Things Investors Need to Check Right Now](https://i.ibb.co/fV9NHMth/gen-00223.png)
+![Three Things Investors Need to Check Right Now](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00223.png)
 
 The safest way to avoid being whipsawed by news headlines is to track the variables themselves. Here's the checklist I personally review every day:
 
@@ -105,7 +105,7 @@ There are also some traps to watch out for. The simple formula "negative news re
 > 💡 Key point: There are three variables — vote results, foreign investor flows, and HBM guidance. Tracking just these three is enough.
 
 ## Closing — What This Episode Leaves Us With
-![Closing — What This Episode Leaves Us With](https://i.ibb.co/WpN8KbpV/gen-00224.png)
+![Closing — What This Episode Leaves Us With](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00224.png)
 
 The Samsung Electronics union strike isn't just a labor-management dispute — it's an event that simultaneously shakes Korean manufacturing's compensation structure and global supply chain stability. Even with a tentative agreement in place, it's hard to call this "over" until the union vote results come in.
 

@@ -14,7 +14,7 @@ What you'll learn from this article:
 ✅ How to report suspected symptoms after returning home
 ✅ A clear standard for domestic risk levels — so you won't be swayed by sensationalized reporting
 ## What Is Hantaan Virus? How Does It Differ from Andes Virus?
-![What Is Hantaan Virus? How Does It Differ from Andes Virus?](https://i.ibb.co/N2zYksWS/gen-00225.png)
+![What Is Hantaan Virus? How Does It Differ from Andes Virus?](/images/posts/2026-05-27-hantaan-virus-spread-on-cruise-ships-5-must-know-prevention-tips-before-your-202/gen-00225.png)
 First, let's clarify the terminology. The Hantaan virus was first isolated and named in 1976 by the late Dr. Ho Wang Lee from striped field mice along Korea's Hantan River, and it serves as the representative species of the Orthohantavirus genus.
 By contrast, the recent cruise ship outbreak was caused by Andes virus, which belongs to the same genus but is found mainly in the Patagonia region of South America. The two viruses are "cousins," but their clinical presentations differ.
 | Category | Hantaan Virus | Andes Virus |
@@ -36,7 +36,7 @@ The reported figures are as follows:
 This incident drew particular attention because the WHO mentioned the "possibility of human-to-human transmission in some cases." Existing hantaviruses were thought to spread only through rodent droppings, urine, or saliva — so if human-to-human transmission turns out to be real, it would shake the entire disease control paradigm.
 > 💡 Key Point: The Hondius incident matters not just as an outbreak but as the first case where human-to-human transmission was suspected.
 ## Cruises, Camping, Hiking — Summer Trips with High Exposure Risk
-![Cruises, Camping, Hiking — Summer Trips with High Exposure Risk](https://i.ibb.co/V0R99Gvj/gen-00226.png)
+![Cruises, Camping, Hiking — Summer Trips with High Exposure Risk](/images/posts/2026-05-27-hantaan-virus-spread-on-cruise-ships-5-must-know-prevention-tips-before-your-202/gen-00226.png)
 Surprisingly, hantavirus exposure often happens during "ordinary vacations." The key mechanism is inhaling dust particles from rodent droppings that have accumulated in enclosed spaces.
 Here are the types of summer travel that carry the highest risk:
 1. South American and Antarctic cruises: Risk of exposure when visiting mountain lodges or storage facilities at ports of call
@@ -48,7 +48,7 @@ In particular, there are many reported cases where exposure occurred during "jus
 I personally remember camping next to an abandoned house in the mountains of Gangwon Province last year. The next day I came down with a headache and mild fever, and worried about it for several days. It turned out to be just a common cold, but that was the first time I seriously googled the phrase "rodent dropping dust."
 > 💡 Key Point: Hantavirus exposure doesn't happen on "wilderness expeditions" — it happens in "enclosed spaces you just briefly stopped by."
 ## Symptom Checklist and 5 Prevention Tips
-![Symptom Checklist and 5 Prevention Tips](https://i.ibb.co/W4K2Fs8n/gen-00227.png)
+![Symptom Checklist and 5 Prevention Tips](/images/posts/2026-05-27-hantaan-virus-spread-on-cruise-ships-5-must-know-prevention-tips-before-your-202/gen-00227.png)
 The incubation period for Andes virus is typically known to be 2–4 weeks. Since symptoms often appear well after returning home, it's essential to inform your doctor of your travel history.
 3-Stage Symptom Checklist
 - Stage 1 (Early): Fever above 38°C, muscle aches, headache, abdominal pain
@@ -62,7 +62,7 @@ Here are 5 practical prevention tips to help you avoid getting there:
 5. Monitor yourself for about 4 weeks after returning home: If you develop a fever or respiratory distress, immediately call the Korea Disease Control and Prevention Agency at 1339 or visit a medical facility and notify them of your "South American or Antarctic travel history"
 > 💡 Key Point: The long incubation period makes it easy to let your guard down, thinking "it's been a while since the trip" — but monitoring for about 4 weeks is essential.
 ## How to Avoid Being Swayed by Domestic Risk and Sensationalized Reporting
-![How to Avoid Being Swayed by Domestic Risk and Sensationalized Reporting](https://i.ibb.co/F4FgbX4y/gen-00228.png)
+![How to Avoid Being Swayed by Domestic Risk and Sensationalized Reporting](/images/posts/2026-05-27-hantaan-virus-spread-on-cruise-ships-5-must-know-prevention-tips-before-your-202/gen-00228.png)
 I'm saving the most important message for last. According to the Korea Disease Control and Prevention Agency's announcement on May 8, 2026, the domestic risk level is "Low."
 The reasoning is clear:
 - The rodent considered the main vector of Andes virus (the long-tailed pygmy rice rat, Oligoryzomys longicaudatus) does not live in Korea
