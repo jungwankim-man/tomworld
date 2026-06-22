@@ -14,6 +14,7 @@
     --ds-text: #1c1c1e;
     --ds-text-muted: #8e8e93;
     --ds-border: #d1d1d6;
+    --ds-code-fg: #0a5fc2; /* AA-safe blue on light code bg (대비 ≥4.5) */
     --ds-radius-sm: 8px;
     --ds-radius-md: 12px;
     --ds-radius-lg: 18px;
@@ -46,6 +47,7 @@
     --ds-text: #ffffff;
     --ds-text-muted: #98989f;
     --ds-border: #38383a;
+    --ds-code-fg: #6cb4ff; /* AA-safe blue on dark code bg (대비 ≥4.5) */
     --ds-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
     --ds-shadow-md: 0 10px 30px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.4);
     --ds-focus-ring: 0 0 0 4px rgba(10, 132, 255, 0.45);
@@ -346,9 +348,11 @@ button:focus-visible,
     overflow-x: auto;
 }
 
-/* (보정 B) 인라인 코드 — 브랜드 톤 (Comeau) */
+/* (보정 B) 인라인 코드 — 브랜드 톤 (Comeau)
+   2026-06-22 R4: AA 대비 위해 테마별 전용 코드색 토큰 사용
+   (이전 primary 88% mix는 라이트 4.1/다크 3.8로 4.5:1 미달). */
 .post-content code {
-    color: color-mix(in srgb, var(--ds-primary) 88%, var(--ds-text));
+    color: var(--ds-code-fg);
     background: color-mix(in srgb, var(--ds-primary) 8%, var(--ds-surface-2));
     border: 1px solid color-mix(in srgb, var(--ds-primary) 14%, transparent);
 }
