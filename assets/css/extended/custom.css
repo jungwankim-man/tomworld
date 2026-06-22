@@ -232,8 +232,16 @@ button:focus-visible,
     margin: 1.3em 0;
 }
 
-/* (2) 글 읽기 폭 살짝 좁힘 (Lovin) — 단일 글 본문 한정 */
-.post-single .post-content {
+/* (2) 글 읽기 폭 — 텍스트만 좁히고 미디어는 전폭 (Lovin/Comeau)
+   .post-content 전체를 묶으면 표/이미지도 같이 좁아지므로 텍스트 요소만 660px. */
+.post-single .post-content > p,
+.post-single .post-content > ul,
+.post-single .post-content > ol,
+.post-single .post-content > blockquote,
+.post-single .post-content > h1,
+.post-single .post-content > h2,
+.post-single .post-content > h3,
+.post-single .post-content > h4 {
     max-width: 660px;
     margin-inline: auto;
 }
@@ -311,21 +319,20 @@ button:focus-visible,
     background-position: 0 100%;
 }
 
-/* (보정 A) 660px 본문에서 표/코드블록만 전폭으로 풀기 — 투자 분석 글 대응 */
-.post-single .post-content table,
-.post-single .post-content pre,
-.post-single .post-content .highlight {
-    max-width: min(820px, 100%);
-    width: max-content;
+/* (보정 A) 표/코드블록은 텍스트 660보다 넉넉히, 컨테이너 전폭까지 (투자 분석 글 대응)
+   텍스트가 660으로 좁아진 만큼 표는 자연폭(콘텐츠 기준)으로 가운데 정렬,
+   넘치면 가로 스크롤. 짧은 표가 과하게 좁아 보이면 min-width로 하한. */
+.post-single .post-content > table,
+.post-single .post-content > .highlight,
+.post-single .post-content > pre {
     margin-inline: auto;
 }
-.post-single .post-content table {
-    display: table; /* width:max-content가 table에서 깨지지 않게 */
-}
-/* 코드블록 내부 스크롤은 유지하되 폭만 넉넉히 */
-.post-single .post-content pre {
-    width: auto;
-    min-width: 100%;
+.post-single .post-content > table {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    min-width: min(660px, 100%);
+    overflow-x: auto;
 }
 
 /* (보정 B) 인라인 코드 — 브랜드 톤 (Comeau) */
