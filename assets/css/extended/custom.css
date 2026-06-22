@@ -107,6 +107,17 @@ body {
     overflow: hidden;
 }
 
+/* ---- 홈/리스트 카드 커버 통일 (2026-06-22 Round 1) ----
+   실제 커버(정사각 등)와 OG 폴백(1200:630)이 섞여 그리드 높이가 들쭉날쭉.
+   리스트 컨텍스트 한정으로 동일 비율 크롭 → 통일감. 단일 글은 원본 비율 유지. */
+.post-entry .entry-cover img,
+.first-entry .entry-cover img {
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
 /* ---- 섹션 헤딩 (기존 간격 유지 + DS 구분선) ---- */
 .post-content h2 {
     margin-top: 48px;
