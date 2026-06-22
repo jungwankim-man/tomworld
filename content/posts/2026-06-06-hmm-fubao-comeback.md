@@ -1,6 +1,10 @@
 ---
 title: "이제 HMM에게도 기회가 오는건가?"
 description: "푸바오가 할부지를 알아본 그 순간을 떠올려 봅니다. 한참을 못 보다가, 어느 날 문득 다시 만났을 때 그 폭발하는 반가움. 요즘 HMM 차트를 들여다보는 보유자들이 가장 기다리는 표정이 딱 저 표정이 아닐까 싶습니다."
+cover:
+  image: "/images/posts/2026-06-06-hmm-fubao-comeback/cover.png"
+  alt: "이제 HMM에게도 기회가 오는건가?"
+  relative: false
 date: 2026-06-06T09:00:00+09:00
 draft: false
 categories: ["종목분석"]
