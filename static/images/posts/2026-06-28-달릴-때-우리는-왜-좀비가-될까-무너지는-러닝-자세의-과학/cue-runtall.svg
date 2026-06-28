@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" width="760" height="460" font-family="Helvetica, Arial, sans-serif">
+  <rect width="760" height="460" fill="#f6f8fa"/>
+  <line x1="40" y1="392" x2="720" y2="392" stroke="#cdd6db" stroke-width="3"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- puppet string pulling crown up -->
+    <line x1="380" y1="150" x2="380" y2="40" stroke="#c8881f" stroke-width="4" stroke-dasharray="3 8"/>
+    <path d="M366 44 q14 -18 28 0" stroke="#c8881f" stroke-width="5"/>
+    <line x1="380" y1="40" x2="380" y2="56" stroke="#c8881f" stroke-width="5"/>
+    <!-- plumb alignment line -->
+    <line x1="380" y1="150" x2="380" y2="392" stroke="#bcc7cd" stroke-width="3" stroke-dasharray="2 12"/>
+    <!-- tall figure -->
+    <line x1="380" y1="180" x2="380" y2="118" stroke="#168f6b" stroke-width="13"/>
+    <circle cx="380" cy="150" r="30" fill="#fff" stroke="#168f6b" stroke-width="11"/>
+    <path d="M380 180 L380 300" stroke="#168f6b" stroke-width="13"/>
+    <path d="M380 206 L344 250 L360 286" stroke="#168f6b" stroke-width="11"/>
+    <path d="M380 206 L416 250 L400 286" stroke="#168f6b" stroke-width="11"/>
+    <path d="M380 300 L380 392" stroke="#168f6b" stroke-width="12"/>
+  </g>
+  <!-- landmark dots: ear / shoulder / hip / ankle -->
+  <g fill="#2d7dd2">
+    <circle cx="380" cy="150" r="7"/><circle cx="380" cy="206" r="7"/>
+    <circle cx="380" cy="300" r="7"/><circle cx="380" cy="392" r="7"/>
+  </g>
+  <g fill="#5b6b78" font-size="18" text-anchor="start">
+    <text x="404" y="156">ear</text><text x="404" y="212">shoulder</text>
+    <text x="404" y="306">hip</text><text x="404" y="398">ankle</text>
+  </g>
+  <text x="380" y="40" fill="#c8881f" font-size="22" font-weight="700" text-anchor="middle"> </text>
+  <text x="200" y="240" fill="#1f2933" font-size="26" font-weight="700" text-anchor="middle">RUN</text>
+  <text x="200" y="272" fill="#1f2933" font-size="26" font-weight="700" text-anchor="middle">TALL</text>
+</svg>

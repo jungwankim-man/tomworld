@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="760" height="440" font-family="Helvetica, Arial, sans-serif">
+  <rect width="760" height="440" fill="#f6f8fa"/>
+  <line x1="40" y1="368" x2="720" y2="368" stroke="#cdd6db" stroke-width="3"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- LEFT: gaze to horizon, head stays up -->
+    <line x1="210" y1="368" x2="214" y2="250" stroke="#168f6b" stroke-width="13"/>
+    <line x1="214" y1="250" x2="222" y2="208" stroke="#168f6b" stroke-width="13"/>
+    <circle cx="230" cy="176" r="30" fill="#fff" stroke="#168f6b" stroke-width="11"/>
+    <line x1="262" y1="172" x2="356" y2="166" stroke="#2d7dd2" stroke-width="7" stroke-dasharray="2 11"/>
+    <path d="M356 166 l-18 -8 m18 8 l-15 11" stroke="#2d7dd2" stroke-width="7"/>
+
+    <!-- RIGHT: gaze to feet, head drops forward -->
+    <path d="M520 368 C516 300 540 262 566 240" stroke="#e0613f" stroke-width="13"/>
+    <line x1="566" y1="240" x2="596" y2="222" stroke="#e0613f" stroke-width="13"/>
+    <circle cx="624" cy="216" r="30" fill="#fff" stroke="#e0613f" stroke-width="11"/>
+    <line x1="616" y1="244" x2="566" y2="352" stroke="#9aa5b1" stroke-width="6" stroke-dasharray="2 11"/>
+    <path d="M566 352 l-3 -19 m3 19 l16 -9" stroke="#9aa5b1" stroke-width="6"/>
+  </g>
+  <text x="232" y="412" fill="#168f6b" font-size="23" font-weight="700" text-anchor="middle">EYES → HORIZON</text>
+  <text x="600" y="412" fill="#e0613f" font-size="23" font-weight="700" text-anchor="middle">EYES → FEET</text>
+  <text x="380" y="56" fill="#1f2933" font-size="25" font-weight="700" text-anchor="middle">GAZE LEADS THE HEAD</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="760" height="440" font-family="Helvetica, Arial, sans-serif">
+  <rect width="760" height="440" fill="#f6f8fa"/>
+  <line x1="40" y1="360" x2="720" y2="360" stroke="#cdd6db" stroke-width="3"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Stage A: neutral -->
+    <line x1="150" y1="360" x2="150" y2="250" stroke="#9aa5b1" stroke-width="12"/>
+    <line x1="150" y1="250" x2="150" y2="205" stroke="#168f6b" stroke-width="12"/>
+    <circle cx="150" cy="178" r="26" fill="#fff" stroke="#168f6b" stroke-width="10"/>
+    <line x1="150" y1="300" x2="150" y2="330" stroke="#168f6b" stroke-width="9"/>
+    <path d="M150 330 l-9 -12 m9 12 l9 -12" stroke="#168f6b" stroke-width="9"/>
+
+    <!-- Stage B: 15 deg forward -->
+    <line x1="390" y1="360" x2="390" y2="250" stroke="#9aa5b1" stroke-width="12"/>
+    <line x1="390" y1="250" x2="424" y2="212" stroke="#e0a23f" stroke-width="12"/>
+    <circle cx="446" cy="190" r="26" fill="#fff" stroke="#e0a23f" stroke-width="10"/>
+    <line x1="446" y1="300" x2="446" y2="345" stroke="#e0a23f" stroke-width="11"/>
+    <path d="M446 345 l-11 -14 m11 14 l11 -14" stroke="#e0a23f" stroke-width="11"/>
+
+    <!-- Stage C: 30 deg forward -->
+    <line x1="630" y1="360" x2="630" y2="250" stroke="#9aa5b1" stroke-width="12"/>
+    <line x1="630" y1="250" x2="676" y2="222" stroke="#e0613f" stroke-width="12"/>
+    <circle cx="702" cy="206" r="26" fill="#fff" stroke="#e0613f" stroke-width="10"/>
+    <line x1="702" y1="300" x2="702" y2="356" stroke="#e0613f" stroke-width="14"/>
+    <path d="M702 356 l-14 -16 m14 16 l14 -16" stroke="#e0613f" stroke-width="14"/>
+  </g>
+  <text x="150" y="408" fill="#168f6b" font-size="24" font-weight="700" text-anchor="middle">0°  ·  5kg</text>
+  <text x="430" y="408" fill="#c8881f" font-size="24" font-weight="700" text-anchor="middle">15°  ·  12kg</text>
+  <text x="680" y="408" fill="#e0613f" font-size="24" font-weight="700" text-anchor="middle">30°  ·  18kg</text>
+  <text x="380" y="58" fill="#1f2933" font-size="26" font-weight="700" text-anchor="middle">HEAD LOAD ↑</text>
+</svg>

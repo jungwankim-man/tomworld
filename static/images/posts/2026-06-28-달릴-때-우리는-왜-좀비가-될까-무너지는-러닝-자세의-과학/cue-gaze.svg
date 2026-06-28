@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" font-family="Helvetica, Arial, sans-serif">
+  <rect width="760" height="420" fill="#f6f8fa"/>
+  <line x1="40" y1="350" x2="720" y2="350" stroke="#cdd6db" stroke-width="3"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M150 350 L160 240" stroke="#168f6b" stroke-width="13"/>
+    <line x1="160" y1="240" x2="168" y2="206" stroke="#168f6b" stroke-width="13"/>
+    <circle cx="176" cy="176" r="28" fill="#fff" stroke="#168f6b" stroke-width="11"/>
+    <path d="M150 350 L150 300 M150 350 L172 300" stroke="#168f6b" stroke-width="11"/>
+    <!-- gaze cone slightly down to a point 10-20 m ahead -->
+    <path d="M204 178 L470 286 L470 322 L196 196 Z" fill="#2d7dd2" fill-opacity="0.12" stroke="none"/>
+    <line x1="204" y1="184" x2="470" y2="304" stroke="#2d7dd2" stroke-width="6" stroke-dasharray="2 11"/>
+    <path d="M470 304 l-20 -2 m20 2 l-9 18" stroke="#2d7dd2" stroke-width="6"/>
+  </g>
+  <circle cx="476" cy="350" r="7" fill="#2d7dd2"/>
+  <text x="540" y="338" fill="#2d7dd2" font-size="26" font-weight="700" text-anchor="middle">10–20 m</text>
+  <text x="380" y="44" fill="#1f2933" font-size="24" font-weight="700" text-anchor="middle">STEP 1 · LOOK AHEAD</text>
+</svg>

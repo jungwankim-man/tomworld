@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" font-family="Helvetica, Arial, sans-serif">
+  <rect width="760" height="420" fill="#f6f8fa"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- LEFT: shoulders shrugged up to ears (tense) -->
+    <circle cx="210" cy="150" r="30" fill="#fff" stroke="#e0613f" stroke-width="11"/>
+    <line x1="210" y1="180" x2="210" y2="320" stroke="#e0613f" stroke-width="13"/>
+    <path d="M210 206 C168 196 150 176 146 158" stroke="#e0613f" stroke-width="13"/>
+    <path d="M210 206 C252 196 270 176 274 158" stroke="#e0613f" stroke-width="13"/>
+    <line x1="146" y1="138" x2="146" y2="112" stroke="#e0613f" stroke-width="6"/>
+    <path d="M146 112 l-8 13 m8 -13 l8 13" stroke="#e0613f" stroke-width="6"/>
+    <line x1="274" y1="138" x2="274" y2="112" stroke="#e0613f" stroke-width="6"/>
+    <path d="M274 112 l-8 13 m8 -13 l8 13" stroke="#e0613f" stroke-width="6"/>
+
+    <!-- RIGHT: shoulders dropped, relaxed -->
+    <circle cx="560" cy="150" r="30" fill="#fff" stroke="#168f6b" stroke-width="11"/>
+    <line x1="560" y1="180" x2="560" y2="320" stroke="#168f6b" stroke-width="13"/>
+    <path d="M560 214 C516 226 498 246 494 268" stroke="#168f6b" stroke-width="13"/>
+    <path d="M560 214 C604 226 622 246 626 268" stroke="#168f6b" stroke-width="13"/>
+    <line x1="494" y1="288" x2="494" y2="314" stroke="#168f6b" stroke-width="6"/>
+    <path d="M494 314 l-8 -13 m8 13 l8 -13" stroke="#168f6b" stroke-width="6"/>
+    <line x1="626" y1="288" x2="626" y2="314" stroke="#168f6b" stroke-width="6"/>
+    <path d="M626 314 l-8 -13 m8 13 l8 -13" stroke="#168f6b" stroke-width="6"/>
+  </g>
+  <text x="210" y="378" fill="#e0613f" font-size="23" font-weight="700" text-anchor="middle">TENSE · up</text>
+  <text x="560" y="378" fill="#168f6b" font-size="23" font-weight="700" text-anchor="middle">RELAX · down</text>
+  <text x="380" y="46" fill="#1f2933" font-size="24" font-weight="700" text-anchor="middle">STEP 3 · DROP SHOULDERS</text>
+</svg>

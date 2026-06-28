@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f8f7"/>
+      <stop offset="1" stop-color="#e7eef0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <line x1="80" y1="560" x2="1120" y2="560" stroke="#cdd6db" stroke-width="3"/>
+
+  <!-- ===== GOOD (left) ===== -->
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- plumb reference -->
+    <line x1="330" y1="150" x2="330" y2="560" stroke="#bcc7cd" stroke-width="3" stroke-dasharray="2 12"/>
+    <!-- spine: hip -> shoulder, tall slight lean -->
+    <path d="M325 380 L338 250" stroke="#168f6b" stroke-width="13"/>
+    <!-- neck + head stacked, gaze level -->
+    <line x1="338" y1="250" x2="345" y2="210" stroke="#168f6b" stroke-width="13"/>
+    <circle cx="352" cy="178" r="32" fill="#fff" stroke="#168f6b" stroke-width="11"/>
+    <!-- gaze forward -->
+    <line x1="384" y1="174" x2="486" y2="166" stroke="#2d7dd2" stroke-width="7" stroke-dasharray="2 10"/>
+    <path d="M486 166 l-18 -8 m18 8 l-16 11" stroke="#2d7dd2" stroke-width="7"/>
+    <!-- arms -->
+    <path d="M336 268 L372 312 L344 340" stroke="#168f6b" stroke-width="11"/>
+    <path d="M336 268 L300 308 L322 342" stroke="#168f6b" stroke-width="11"/>
+    <!-- legs: front knee up, foot under body; back toe-off -->
+    <path d="M325 380 L372 446 L358 524" stroke="#168f6b" stroke-width="12"/>
+    <path d="M325 380 L292 458 L250 540" stroke="#168f6b" stroke-width="12"/>
+  </g>
+  <text x="300" y="612" fill="#168f6b" font-size="34" font-weight="700">GOOD</text>
+
+  <!-- ===== ZOMBIE (right) ===== -->
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="845" y1="150" x2="845" y2="560" stroke="#bcc7cd" stroke-width="3" stroke-dasharray="2 12"/>
+    <!-- rounded upper back, spine humps forward -->
+    <path d="M848 380 C842 320 858 280 892 256" stroke="#e0613f" stroke-width="13"/>
+    <!-- forward + dropped head -->
+    <line x1="892" y1="256" x2="922" y2="236" stroke="#e0613f" stroke-width="13"/>
+    <circle cx="950" cy="232" r="32" fill="#fff" stroke="#e0613f" stroke-width="11"/>
+    <!-- gaze dropping to feet -->
+    <line x1="956" y1="262" x2="912" y2="520" stroke="#9aa5b1" stroke-width="6" stroke-dasharray="2 10"/>
+    <path d="M912 520 l-2 -20 m2 20 l16 -10" stroke="#9aa5b1" stroke-width="6"/>
+    <!-- slack arms -->
+    <path d="M892 280 L922 330 L900 372" stroke="#e0613f" stroke-width="11"/>
+    <path d="M892 280 L862 326 L884 368" stroke="#e0613f" stroke-width="11"/>
+    <!-- shuffling legs -->
+    <path d="M848 380 L884 452 L872 528" stroke="#e0613f" stroke-width="12"/>
+    <path d="M848 380 L812 456 L784 536" stroke="#e0613f" stroke-width="12"/>
+  </g>
+  <text x="812" y="612" fill="#e0613f" font-size="34" font-weight="700">ZOMBIE</text>
+
+  <line x1="600" y1="120" x2="600" y2="500" stroke="#d4dde1" stroke-width="2" stroke-dasharray="6 8"/>
+</svg>

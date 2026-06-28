@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="760" height="440" font-family="Helvetica, Arial, sans-serif">
+  <rect width="760" height="440" fill="#f6f8fa"/>
+  <line x1="40" y1="372" x2="720" y2="372" stroke="#cdd6db" stroke-width="3"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- LEFT: overstride, foot lands ahead of hips, braking -->
+    <line x1="200" y1="252" x2="200" y2="190" stroke="#e0613f" stroke-width="13"/>
+    <circle cx="200" cy="162" r="26" fill="#fff" stroke="#e0613f" stroke-width="10"/>
+    <line x1="200" y1="252" x2="206" y2="300" stroke="#e0613f" stroke-width="13"/>
+    <!-- front leg reaching far ahead (heel strike) -->
+    <path d="M206 300 L300 348 L322 372" stroke="#e0613f" stroke-width="12"/>
+    <!-- back leg -->
+    <path d="M206 300 L168 344 L150 372" stroke="#e0613f" stroke-width="12"/>
+    <!-- hip plumb -->
+    <line x1="202" y1="120" x2="202" y2="372" stroke="#bcc7cd" stroke-width="3" stroke-dasharray="2 12"/>
+    <!-- braking arrow at front foot -->
+    <line x1="316" y1="392" x2="250" y2="392" stroke="#e0613f" stroke-width="6"/>
+    <path d="M250 392 l16 -9 m-16 9 l16 9" stroke="#e0613f" stroke-width="6"/>
+
+    <!-- RIGHT: foot lands under hips -->
+    <line x1="560" y1="252" x2="560" y2="190" stroke="#168f6b" stroke-width="13"/>
+    <circle cx="560" cy="162" r="26" fill="#fff" stroke="#168f6b" stroke-width="10"/>
+    <line x1="560" y1="252" x2="560" y2="300" stroke="#168f6b" stroke-width="13"/>
+    <!-- support leg under body -->
+    <path d="M560 300 L566 372" stroke="#168f6b" stroke-width="12"/>
+    <!-- other leg knee up behind/under -->
+    <path d="M560 300 L520 340 L540 372" stroke="#168f6b" stroke-width="12"/>
+    <line x1="560" y1="120" x2="560" y2="372" stroke="#bcc7cd" stroke-width="3" stroke-dasharray="2 12"/>
+  </g>
+  <text x="230" y="418" fill="#e0613f" font-size="22" font-weight="700" text-anchor="middle">OVERSTRIDE · brake</text>
+  <text x="560" y="418" fill="#168f6b" font-size="22" font-weight="700" text-anchor="middle">UNDER HIPS · 170–180</text>
+  <text x="380" y="50" fill="#1f2933" font-size="24" font-weight="700" text-anchor="middle">STEP 5 · QUICK CADENCE</text>
+</svg>

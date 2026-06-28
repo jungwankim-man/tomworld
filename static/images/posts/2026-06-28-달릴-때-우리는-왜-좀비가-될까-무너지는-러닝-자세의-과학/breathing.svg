@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="760" height="440" font-family="Helvetica, Arial, sans-serif">
+  <rect width="760" height="440" fill="#f6f8fa"/>
+  <text x="380" y="48" fill="#1f2933" font-size="25" font-weight="700" text-anchor="middle">POSTURE → BREATHING</text>
+
+  <!-- LEFT: slumped spine + small lungs + thin air -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M118 120 C92 170 110 240 150 286" fill="none" stroke="#e0613f" stroke-width="11"/>
+    <!-- thin inhale arrow -->
+    <line x1="222" y1="120" x2="222" y2="158" stroke="#9aa5b1" stroke-width="5"/>
+    <path d="M222 158 l-8 -11 m8 11 l8 -11" stroke="#9aa5b1" stroke-width="5" fill="none"/>
+    <!-- trachea + small lungs -->
+    <line x1="222" y1="158" x2="222" y2="196" stroke="#e0613f" stroke-width="7" fill="none"/>
+    <line x1="222" y1="196" x2="202" y2="212" stroke="#e0613f" stroke-width="6"/>
+    <line x1="222" y1="196" x2="242" y2="212" stroke="#e0613f" stroke-width="6"/>
+    <ellipse cx="198" cy="244" rx="22" ry="34" fill="#fbded5" stroke="#e0613f" stroke-width="6"/>
+    <ellipse cx="246" cy="244" rx="22" ry="34" fill="#fbded5" stroke="#e0613f" stroke-width="6"/>
+  </g>
+  <text x="216" y="392" fill="#e0613f" font-size="23" font-weight="700" text-anchor="middle">SLUMP · less air</text>
+
+  <!-- RIGHT: tall spine + big lungs + thick air -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <line x1="470" y1="116" x2="470" y2="300" stroke="#168f6b" stroke-width="11"/>
+    <!-- thick inhale arrow -->
+    <line x1="560" y1="96" x2="560" y2="150" stroke="#2d7dd2" stroke-width="11"/>
+    <path d="M560 150 l-14 -17 m14 17 l14 -17" stroke="#2d7dd2" stroke-width="11" fill="none"/>
+    <!-- trachea + big lungs -->
+    <line x1="560" y1="150" x2="560" y2="196" stroke="#168f6b" stroke-width="9" fill="none"/>
+    <line x1="560" y1="196" x2="528" y2="220" stroke="#168f6b" stroke-width="8"/>
+    <line x1="560" y1="196" x2="592" y2="220" stroke="#168f6b" stroke-width="8"/>
+    <ellipse cx="522" cy="268" rx="36" ry="58" fill="#d8f0e6" stroke="#168f6b" stroke-width="8"/>
+    <ellipse cx="598" cy="268" rx="36" ry="58" fill="#d8f0e6" stroke="#168f6b" stroke-width="8"/>
+  </g>
+  <text x="560" y="392" fill="#168f6b" font-size="23" font-weight="700" text-anchor="middle">TALL · more air</text>
+
+  <line x1="380" y1="96" x2="380" y2="372" stroke="#dde4e8" stroke-width="2" stroke-dasharray="6 8"/>
+</svg>
