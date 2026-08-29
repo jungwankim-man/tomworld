@@ -2,7 +2,7 @@
 title: "MLCC 견적 거절당하지 않는 법 — Buyers Edition"
 date: 2026-08-29
 slug: mlcc-buyers-edition-견적-방어-매뉴얼
-categories: [하드웨어, 부품조달]
+categories: ["업무자동화"]
 tags: [MLCC, 조달, SCM, 리드타임, BOM]
 cover:
   image: "/images/posts/2026-08-mlcc-buyers-edition/img1.webp"
@@ -13,7 +13,6 @@ images:
   - "/images/posts/2026-08-mlcc-buyers-edition/img3.webp"
   - "/images/posts/2026-08-mlcc-buyers-edition/img4.webp"
 ---
-
 [1편](/posts/mlcc-쇼티지-진짜-원인---ai-서버가-캐파-삼킨-이유/)에서 AI 서버가 MLCC를 얼마나 삼키고 있는지, 왜 0201·고용량 패키지가 먼저 말라붙는지를 봤다. 그 글의 결론은 세 가지였다: **재고를 잡아라, 다변화해라, 스펙을 풀어라.**
 
 이번 편은 그 다음이다. **견적서에 "sorry, no stock"이라고 적혀 돌아왔을 때**, 발주 라인에서 실제로 통하는 것들을 순서대로 펼쳐본다.
