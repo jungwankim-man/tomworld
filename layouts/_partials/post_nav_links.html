@@ -5,9 +5,11 @@
 {{- if and (gt (len $pages) 1) (in $pages .) }}
 <nav class="paginav-cards">
   {{- with $pages.Next . }}
-    {{- $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) }}
+    {{- $slug := .File.ContentBaseName }}
+    {{- $image := .Params.cover.image | default (printf "/og-images/%s.png" $slug) }}
+    {{- if and (not .Params.cover.image) (not (fileExists (printf "static%s" $image))) }}{{ $image = "/og-images/_default.png" }}{{ end }}
     <a class="paginav-card prev" href="{{ .Permalink }}">
-      <img loading="lazy" src="/og-images/{{ $slug }}.png" alt="" width="120" height="63">
+      <img loading="lazy" src="{{ $image }}" alt="" width="120" height="63">
       <div class="paginav-meta">
         <span class="paginav-dir">« 이전 글</span>
         <span class="paginav-title">{{ .Title }}</span>
@@ -15,13 +17,15 @@
     </a>
   {{- end }}
   {{- with $pages.Prev . }}
-    {{- $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) }}
+    {{- $slug := .File.ContentBaseName }}
+    {{- $image := .Params.cover.image | default (printf "/og-images/%s.png" $slug) }}
+    {{- if and (not .Params.cover.image) (not (fileExists (printf "static%s" $image))) }}{{ $image = "/og-images/_default.png" }}{{ end }}
     <a class="paginav-card next" href="{{ .Permalink }}">
       <div class="paginav-meta">
         <span class="paginav-dir">다음 글 »</span>
         <span class="paginav-title">{{ .Title }}</span>
       </div>
-      <img loading="lazy" src="/og-images/{{ $slug }}.png" alt="" width="120" height="63">
+      <img loading="lazy" src="{{ $image }}" alt="" width="120" height="63">
     </a>
   {{- end }}
 </nav>

@@ -47,8 +47,10 @@
         {{- $img = (path.Join .RelPermalink .Params.cover.image) | absURL -}}
     {{- end -}}
 {{- else if and (eq .Section "posts") -}}
-    {{- $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) -}}
-    {{- $img = printf "%s/og-images/%s.png" (site.BaseURL | strings.TrimSuffix "/") $slug -}}
+    {{- $slug := .File.ContentBaseName -}}
+    {{- $og := printf "/og-images/%s.png" $slug -}}
+    {{- if not (fileExists (printf "static%s" $og)) -}}{{- $og = "/og-images/_default.png" -}}{{- end -}}
+    {{- $img = $og | absURL -}}
 {{- else -}}
     {{- with partial "_funcs/get-page-images" . -}}
         {{- with index . 0 -}}

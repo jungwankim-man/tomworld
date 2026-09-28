@@ -13,8 +13,9 @@
 
 {{- /* Fallback: list view of a post → use OG image card. */ -}}
 {{- else if and (not $.IsSingle) (not $.isHidden) (eq .Section "posts") -}}
-    {{- $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) -}}
+    {{- $slug := .File.ContentBaseName -}}
     {{- $og := printf "/og-images/%s.png" $slug -}}
+    {{- if not (fileExists (printf "static%s" $og)) -}}{{- $og = "/og-images/_default.png" -}}{{- end -}}
     <figure class="entry-cover">
         <a href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
             <img loading="lazy" src="{{ $og | absURL }}" width="1200" height="630"

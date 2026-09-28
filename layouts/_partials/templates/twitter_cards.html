@@ -9,9 +9,11 @@
 <meta name="twitter:image" content="{{ (path.Join .RelPermalink .Params.cover.image ) | absURL }}">
 {{- end}}
 {{- else if and .IsPage (eq .Section "posts") }}
-  {{- $slug := path.Base (strings.TrimSuffix "/" .RelPermalink) }}
+  {{- $slug := .File.ContentBaseName }}
+  {{- $og := printf "/og-images/%s.png" $slug }}
+  {{- if not (fileExists (printf "static%s" $og)) }}{{ $og = "/og-images/_default.png" }}{{ end }}
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="{{ (printf "/og-images/%s.png" $slug) | absURL }}">
+  <meta name="twitter:image" content="{{ $og | absURL }}">
 {{- else }}
 {{- $images := partial "templates/_funcs/get-page-images" . }}
 {{- with index $images 0 }}
