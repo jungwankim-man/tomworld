@@ -362,3 +362,29 @@ button:focus-visible,
     background: transparent;
     border: none;
 }
+
+/* ============================================================
+   (가독성 2026-09-29) 한국어 본문 줄바꿈·캡션·소제목 간격
+   ============================================================ */
+/* 한국어 어절 중간에서 줄이 끊기지 않게("안 / 나왔다" 방지). 긴 URL은 anywhere로 끊는다. */
+.post-content {
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    line-height: 1.85;
+}
+/* 이미지 바로 아래 *캡션* — 본문과 구분되게 작고 흐리게, 가운데 */
+.post-content p > img + em {
+    display: block;
+    margin-top: 0.6em;
+    text-align: center;
+    font-size: 0.85em;
+    font-style: normal;
+    color: var(--secondary);
+}
+/* 소제목 위 여백을 넉넉히 — 단락 덩어리가 한눈에 갈리게 */
+.post-content h2 { margin-top: 2.4em; }
+.post-content h3 { margin-top: 2em; }
+/* 목록 항목 사이 숨 쉴 틈 */
+.post-content li + li { margin-top: 0.45em; }
+/* 표는 본문보다 한 단계 작게 */
+.post-content table { font-size: 0.9em; }
