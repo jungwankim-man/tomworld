@@ -1,0 +1,21 @@
+{{- /* 목록 카드 한 장. list.html이 호출한다. ctx=Page, class=추가 클래스.
+       커버(없으면 OG 폴백) → 제목 → 요약 → 메타(카테고리·날짜·읽는 시간). */ -}}
+{{- $p := .ctx -}}
+<article class="post-entry {{ .class }}">
+  {{- $isHidden := ($p.Param "cover.hiddenInList") | default ($p.Param "cover.hidden") | default false }}
+  {{- partial "cover.html" (dict "cxt" $p "IsSingle" false "isHidden" $isHidden) }}
+  <div class="card-body">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ $p.Title }}</h2>
+    </header>
+    {{- if (ne ($p.Param "hideSummary") true) }}
+    <div class="entry-content">
+      <p>{{ $p.Summary | plainify | htmlUnescape }}{{ if $p.Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    {{- if not ($p.Param "hideMeta") }}
+    <footer class="entry-footer">{{- partial "post_meta.html" $p -}}</footer>
+    {{- end }}
+  </div>
+  <a class="entry-link" aria-label="post link to {{ $p.Title | plainify }}" href="{{ $p.Permalink }}"></a>
+</article>

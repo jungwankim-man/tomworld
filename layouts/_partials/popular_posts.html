@@ -2,7 +2,7 @@
        Filters to /posts/* paths only, joins each path to its Page so
        we can render title + permalink. Silently no-ops when data is
        missing or there are no eligible posts. */ -}}
-{{- $top := 5 -}}
+{{- $top := 6 -}}
 {{- $views := site.Data.views | default dict -}}
 
 {{- /* Build [{path, pv}] excluding _meta and non-post paths. */ -}}
@@ -26,23 +26,16 @@
 {{- end -}}
 
 {{- with $resolved }}
-<section class="popular-posts" aria-label="자주 찾는 글">
-    <h3 class="popular-posts-title">자주 찾는 글</h3>
+<aside class="popular-posts" aria-label="자주 찾는 글">
+    <h2 class="popular-posts-title">자주 찾는 글</h2>
     <ol class="popular-posts-list">
-        {{- range . }}
+        {{- range $i, $r := . }}
         <li>
-            <a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a>
-            <span class="popular-posts-pv">조회 {{ lang.FormatNumber 0 .pv }}</span>
+            <span class="popular-rank">{{ printf "%02d" (add $i 1) }}</span>
+            <a href="{{ $r.page.RelPermalink }}">{{ $r.page.Title }}</a>
+            <span class="popular-posts-pv">조회 {{ lang.FormatNumber 0 $r.pv }}</span>
         </li>
         {{- end }}
     </ol>
-</section>
-<style>
-.popular-posts { margin-top: var(--gap); padding-top: var(--gap); border-top: 1px solid var(--border); }
-.popular-posts-title { margin: 0 0 calc(var(--gap) / 2) 0; font-size: 1.05em; }
-.popular-posts-list { margin: 0; padding-left: 1.4em; }
-.popular-posts-list li { margin: 0.35em 0; }
-.popular-posts-list a { color: var(--primary); }
-.popular-posts-pv { margin-left: 0.5em; color: var(--secondary); font-size: 0.85em; }
-</style>
+</aside>
 {{- end -}}

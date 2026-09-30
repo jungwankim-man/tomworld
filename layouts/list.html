@@ -1,0 +1,87 @@
+{{- /* Site override of PaperMod list.html (2026-09-30 매거진 레이아웃).
+       - 모든 글 목록(홈·섹션·카테고리·태그)은 .post-grid 카드 그리드
+       - 각 페이지 첫 글은 .featured(가로형 큰 카드)
+       - 홈 1쪽은 [대표 글 | 자주 찾는 글] 벤토 한 줄
+       폭 전환은 전부 CSS(custom.css)의 미디어쿼리로만 한다. */ -}}
+{{- define "main" }}
+
+{{- if not .IsHome | and .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>
+    {{ .Title }}
+    {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
+    {{- with .OutputFormats.Get "rss" }}
+    <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" /><path d="M4 4a16 16 0 0 1 16 16" /><circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+    {{- end }}
+    {{- end }}
+  </h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description | markdownify }}</div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content md-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- $pages := union .RegularPages .Sections }}
+{{- if .IsHome }}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
+{{- end }}
+
+{{- $paginator := .Paginate $pages }}
+{{- $isHomeFirst := and .IsHome (eq $paginator.PageNumber 1) }}
+
+{{- if and $isHomeFirst site.Params.homeInfoParams }}
+{{- partial "home_info.html" . }}
+{{- end }}
+
+{{- range $index, $page := $paginator.Pages }}
+{{- if eq $index 0 }}
+  {{- if $isHomeFirst }}
+<section class="home-top">
+  {{- partial "post_card.html" (dict "ctx" $page "class" "featured") }}
+  {{- partial "popular_posts.html" $ }}
+</section>
+  {{- else }}
+  {{- partial "post_card.html" (dict "ctx" $page "class" "featured featured-wide") }}
+  {{- end }}
+<div class="post-grid">
+{{- else }}
+  {{- partial "post_card.html" (dict "ctx" $page "class" "") }}
+{{- end }}
+{{- end }}
+{{- if $paginator.Pages }}
+</div>
+{{- end }}
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">«&nbsp;{{ i18n "prev_page" }}&nbsp;
+      {{- if (.Param "ShowPageNums") }}{{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}{{- end }}
+    </a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{- i18n "next_page" }}&nbsp;
+      {{- if (.Param "ShowPageNums") }}{{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}{{- end }}&nbsp;»
+    </a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}

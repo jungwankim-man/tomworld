@@ -1,19 +1,14 @@
 {{- /* Site override of PaperMod's home_info.html.
-       Adds a "🔥 인기 글" section below the welcome copy, sourced from
-       data/views.json (refreshed daily by fetch_ga_views). Cosmetic
-       partial; degrades silently when no data is available. */ -}}
+       카드 박스 없이 여백과 타이포만으로 된 인트로. 인기 글은
+       list.html의 .home-top 오른쪽 칸으로 옮겼다(popular_posts.html). */ -}}
 {{- with site.Params.homeInfoParams }}
-<article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>{{ .Title | markdownify }}</h1>
-    </header>
-    <div class="entry-content md-content">
+<header class="home-intro">
+    <p class="home-intro-kicker">tomworld</p>
+    <h1>{{ .Title | markdownify }}</h1>
+    <div class="home-intro-text">
         {{ $opts := dict "display" "block" }}
         {{ .Content | $.Page.RenderString $opts }}
     </div>
-    {{- partial "popular_posts.html" $.Page -}}
-    <footer class="entry-footer">
-        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
-    </footer>
-</article>
+    {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+</header>
 {{- end -}}

@@ -12,7 +12,8 @@ buildFuture: false
 buildExpired: false
 
 pagination:
-  pagerSize: 10
+  # 13 = 가로형 대표 카드 1 + 3열×4줄(2열×6줄) 그리드 — 어느 폭에서도 빈 칸 없음
+  pagerSize: 13
 
 minify:
   disableXML: true
