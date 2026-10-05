@@ -3,11 +3,10 @@ title: "Dell U3223QE 사용시간 확인하기: 맥에서 DDPM 보고서로 4,19
 date: 2026-09-30 16:36:00 +0900
 draft: false
 slug: dell-u3223qe-usage-hours-ddpm-mac
-categories: ["생활후기"]
+categories: ["시사이슈"]
 tags: ["Dell", "U3223QE", "모니터", "DDPM", "맥", "사용시간"]
 description: "조이스틱형 Dell U3223QE의 누적 사용시간을 macOS용 Dell Display and Peripheral Manager 자산 보고서에서 확인한 과정과 주의할 점."
 ---
-
 모니터의 사용시간을 확인하려고 Dell 서비스 메뉴 진입 영상을 찾아봤다. 그런데 내 U3223QE에는 영상 속 버튼이 없다. 뒤쪽에 조이스틱 하나와 전원 버튼만 있다. DP 케이블로 연결한 상태에서 조이스틱 가운데를 누르고 전원 버튼을 두 번 누르는 방법도 시도했지만, 내 제품에서는 서비스 메뉴가 열리지 않았다.
 
 결국 답은 숨겨진 파란 메뉴가 아니라 Dell의 **Display and Peripheral Manager(DDPM)** 보고서에 있었다. 2026년 9월 30일 내 U3223QE에서 확인한 값은 **4,193시간**이다.
