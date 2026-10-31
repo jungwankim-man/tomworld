@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # 매일 09:05 KST(00:05 UTC) 재빌드 — 미래 날짜(예약) 글이 그 시각에 공개됨
+    - cron: '5 0 * * *'
 
 permissions:
   contents: write
