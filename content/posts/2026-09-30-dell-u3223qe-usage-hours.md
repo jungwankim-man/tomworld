@@ -3,7 +3,7 @@ title: "Dell U3223QE 사용시간 확인하기: 맥에서 DDPM 보고서로 4,19
 date: 2026-09-30 16:36:00 +0900
 draft: false
 slug: dell-u3223qe-usage-hours-ddpm-mac
-categories: ["여행기술"]
+categories: ["시사이슈"]
 tags: ["Dell", "U3223QE", "모니터", "DDPM", "맥", "사용시간"]
 description: "조이스틱형 Dell U3223QE의 누적 사용시간을 macOS용 Dell Display and Peripheral Manager 자산 보고서에서 확인한 과정과 주의할 점."
 ---
