@@ -234,6 +234,10 @@ def process(path: Path, dry_run: bool) -> tuple[str, str, list[str]]:
     category = infer_category(title, tags_line)
     series = infer_series(title, tags_line)
 
+    # categoryLock: true → 사람이 직접 고른 카테고리를 덮어쓰지 않는다.
+    if re.search(r"^categoryLock\s*:\s*true\s*$", fm, re.MULTILINE | re.IGNORECASE):
+        cur = re.search(r'^categories\s*:\s*\[\s*"([^"]+)"', fm, re.MULTILINE)
+        category = cur.group(1) if cur else category
     new_fm = _upsert_frontmatter_field(fm, "categories", _yaml_list_line("categories", [category]))
     if series:
         new_fm = _upsert_frontmatter_field(new_fm, "series", _yaml_list_line("series", series))
