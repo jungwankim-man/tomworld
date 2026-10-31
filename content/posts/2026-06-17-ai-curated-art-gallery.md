@@ -9,6 +9,11 @@ cover:
   image: "/images/posts/2026-06-17-ai-curated-art-gallery/a02-cherry-blossom-umbrella.png"
   alt: "벚꽃 아래 우산을 든 애니메이션 소녀"
   relative: false
+robotsNoIndex: true
+sitemap:
+  disable: true
+build:
+  list: never
 ---
 오늘은 분석 글 대신 가벼운 갤러리입니다.
 

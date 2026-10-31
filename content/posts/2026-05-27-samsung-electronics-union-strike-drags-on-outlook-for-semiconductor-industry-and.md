@@ -9,6 +9,11 @@ date: 2026-05-27T19:49:11+09:00
 draft: false
 categories: ["시사이슈"]
 tags: ["Samsung strike", "semiconductor crisis", "Samsung stock", "HBM supply chain", "emergency arbitration"]
+robotsNoIndex: true
+sitemap:
+  disable: true
+build:
+  list: never
 ---
 "Will the Samsung Electronics stock I'm holding actually go up once the strike ends?" That's the most common question I see in stock communities these days. A tentative agreement was reached on May 20, 2026, but with the possibility that the strike could reignite depending on the union members' ratification vote, the market is still walking on thin ice.
 

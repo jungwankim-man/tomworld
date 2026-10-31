@@ -9,6 +9,11 @@ date: 2026-05-27T19:31:42+09:00
 draft: false
 categories: ["여행기술"]
 tags: ["Hantaan virus", "hantavirus", "cruise travel", "Andes virus", "summer travel prevention tips"]
+robotsNoIndex: true
+sitemap:
+  disable: true
+build:
+  list: never
 ---
 As summer vacation season approaches, the term "Hantaan virus" has been circulating uneasily among those planning cruise trips. Search volume surged after a hantavirus outbreak on the Dutch cruise ship MV Hondius in April–May 2026 killed three people. Yet accurate information is scarce, and only exaggerated news stories seem to be making the rounds.
 What you'll learn from this article:

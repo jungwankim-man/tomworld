@@ -9,6 +9,11 @@ date: 2026-05-27T19:49:47+09:00
 draft: false
 categories: ["시사이슈"]
 tags: ["6·3 Local Elections", "Seoul Mayoral Race", "Jung Won-oh", "Oh Se-hoon", "Polling Trends"]
+robotsNoIndex: true
+sitemap:
+  disable: true
+build:
+  list: never
 ---
 "The race flipped in just two weeks." That's the line people keep repeating ahead of the Seoul mayoral race in the June 3 local elections. As recently as early May, one side held a clear lead — but that gap has since narrowed into a dead heat within the margin of error, and now no one can say with confidence who will win. For anyone left more confused than informed by the daily flood of polling headlines, we've pulled all the scattered pieces together in one place.
 What you'll learn from this post:
