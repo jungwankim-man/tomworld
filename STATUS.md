@@ -32,3 +32,4 @@ BLOCKED: (없음)
 - 2026-11-13: 「이번 주 AI 화제 정리 — Fable 5.2·앤트로픽 상장·엔비디아」 공개(시사이슈, slug ai-weekly-2026-11-2nd-week). 해외 위클리 다이제스트(concl.io·thehype·PYMNTS) 검토 후 한국어 큐레이션, HF Qwen·OpenRouter 직접 조회 반영. OG 카드만(cover 미생성). Pages run 43357834110 success, live 200. 후속: 11/17 엔비디아 실적·CEO, 11/19 앤트로픽 상장 첫날, 11/25 ERNIE·Qwen4 가중치.
 - 2026-11-13: 「앤트로픽 상장 총정리 — 몸값 1.4조 달러」 공개(시사이슈, slug anthropic-ipo-background-2026-11). S-1/S-1A 실적·지배구조(PBC/LTBT/Class F)·투자자·한국 영향·청약 불가 정리. Pages run 43359408425 success, live 200. 후속: 11/18 공모가, 11/19 첫날 주가 덧붙이기.
 - 2026-11-13: 「한국엔 덜 알려진 절경 11곳」 공개(여행기술, slug hidden-beautiful-landscapes-11). 사진 53장 전부 Wikimedia Commons 공개 라이선스, 사진별 촬영자·라이선스 표기. 대표=렌소이스.
+- 2026-11-13: 절경 11곳 글 사진 확장 53→325장(장소당 대표 5+갤러리 24~25). photogrid 숏코드(data/gallery_hidden_landscapes.json) 추가, 갤러리 1024px webp q72 약 30MB.
