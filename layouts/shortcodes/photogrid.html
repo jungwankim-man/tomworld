@@ -1,0 +1,11 @@
+{{- $key := .Get "key" -}}{{- $name := .Get "name" -}}
+{{- $items := index site.Data.gallery_hidden_landscapes $key -}}
+<details class="photogrid-wrap" open>
+<summary>{{ $name }} 사진 더 보기 ({{ len $items }}장)</summary>
+<div class="photogrid">
+{{- range $i, $p := $items }}
+<figure><a href="{{ $p.page }}" target="_blank" rel="noopener"><img src="{{ $p.src }}" alt="{{ $name }} 풍경 {{ add $i 1 }}" loading="lazy" decoding="async"></a>
+<figcaption>{{ $p.artist | truncate 40 }} · {{ $p.lic }}</figcaption></figure>
+{{- end }}
+</div>
+</details>
