@@ -126,8 +126,6 @@ def main() -> int:
         if not changed:
             continue
         changed_files += 1
-        dropped = [t for t in before if t.strip().lstrip("[").rstrip("]").strip() not in after
-                   and _clean_tag(t) not in after]
         dropped_total += len(before) - len(after)
         flag = "[DRY]" if args.dry_run else "[upd]"
         print(f"{flag} {p.name}")
@@ -135,7 +133,7 @@ def main() -> int:
         print(f"       after : {after}")
 
     print()
-    print(f"=== Summary ===")
+    print("=== Summary ===")
     print(f"  files changed: {changed_files} / {len(files)}")
     print(f"  tags removed (net): {dropped_total}")
     return 0
