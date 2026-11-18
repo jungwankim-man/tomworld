@@ -3,6 +3,11 @@ title: "Dell U3223QE 사용시간 확인하기: 맥에서 DDPM 보고서로 4,19
 date: 2026-09-30 16:36:00 +0900
 draft: false
 slug: dell-u3223qe-usage-hours-ddpm-mac
+cover:
+  image: "/images/posts/2026-09-dell-u3223qe/cover.webp"
+  alt: "Dell 모니터 뒷면과 스탠드 결합부"
+images:
+  - "/images/posts/2026-09-dell-u3223qe/cover.webp"
 categories: ["여행기술"]
 categoryLock: true
 tags: ["Dell", "U3223QE", "모니터", "DDPM", "맥", "사용시간"]
@@ -46,3 +51,5 @@ Connection = "DP"
 **패널 수명은 단정하지 않는다.** LCD 패널의 백라이트 수명은 보통 수만 시간 단위로 이야기되지만, 이는 밝기가 처음의 절반 정도로 떨어지는 시점을 기준으로 한 값이고 사용 환경에 따라 크게 달라진다. 4천 시간대는 수명을 걱정할 단계는 아니라고 보는 게 무난하지만, 이 숫자 하나로 남은 수명을 계산하지는 않는다.
 
 **참고:** [Dell DDPM for macOS 안내](https://www.dell.com/support/kbdoc/en-us/000201067/dell-display-and-peripheral-manager-for-macos) · [Dell Display Manager 자산 보고서의 `UsageTime` 예시](https://www.dell.com/support/kbdoc/en-us/000060112/what-is-dell-display-manager)
+
+*표지 사진: [Dāvis Mosāns from Salaspils, Latvia](https://commons.wikimedia.org/wiki/File:Monitor_-_Flickr_-_davispuh_(4).jpg) / Wikimedia Commons, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)*
