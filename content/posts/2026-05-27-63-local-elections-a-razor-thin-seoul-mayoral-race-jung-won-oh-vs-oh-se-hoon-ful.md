@@ -1,86 +1,116 @@
 ---
-title: "6·3 Local Elections: A Razor-Thin Seoul Mayoral Race! Jung Won-oh vs. Oh Se-hoon Full Breakdown (Latest, D-12)"
-description: "\"The race flipped in just two weeks.\" That's the line people keep repeating ahead of the Seoul mayoral race in the June 3 local elections."
+title: "6·3 지방선거 서울시장 초접전 — 정원오 vs 오세훈 총정리와 최종 결과"
+description: "2026년 6·3 지방선거 서울시장 선거는 오차범위 안 초접전이었다. 여론조사 흐름, 두 후보의 이력과 대표 공약, 세대별 표심, 막판 변수를 정리하고 최종 결과(오세훈 49.22%, 정원오 48.07%, 1.15%p 차)까지 덧붙였다."
 cover:
   image: "/images/posts/2026-05-27-63-local-elections-a-razor-thin-seoul-mayoral-race-jung-won-oh-vs-oh-se-hoon-ful/cover.png"
-  alt: "6·3 Local Elections: A Razor-Thin Seoul Mayoral Race! Jung Won-oh vs. Oh Se-hoon Full Breakdown (Latest, D-12)"
+  alt: "6·3 지방선거 서울시장 선거"
   relative: false
 date: 2026-05-27T19:49:47+09:00
+lastmod: 2026-11-20T16:30:00+09:00
 draft: false
 categories: ["시사이슈"]
-tags: ["6·3 Local Elections", "Seoul Mayoral Race", "Jung Won-oh", "Oh Se-hoon", "Polling Trends"]
-robotsNoIndex: true
-sitemap:
-  disable: true
-build:
-  list: never
+tags: ["6·3 지방선거", "서울시장 선거", "정원오", "오세훈", "여론조사"]
 ---
-"The race flipped in just two weeks." That's the line people keep repeating ahead of the Seoul mayoral race in the June 3 local elections. As recently as early May, one side held a clear lead — but that gap has since narrowed into a dead heat within the margin of error, and now no one can say with confidence who will win. For anyone left more confused than informed by the daily flood of polling headlines, we've pulled all the scattered pieces together in one place.
-What you'll learn from this post:
-✅ How the polling trends have shifted from early May until now
-✅ A side-by-side comparison of the two candidates' profiles and signature pledges — Jung Won-oh and Oh Se-hoon
-✅ Where the real battleground lies as voter sentiment splits by generation and region
-✅ The last-minute variables that could swing the result over the remaining 12 days
-## 1. The Race That Flipped in Two Weeks — Start With the Polling Trend
-The single keyword for this election is, without question, "dead heat." That's because the mood in early May and mid-May couldn't be more different.
-Here's how the polling flow breaks down by point in time:
-| Timing | Reported Race Trend | Mood |
-| --- | --- | --- |
-| Early May | One candidate leads by roughly 10%p | Lead consolidating? |
-| Mid-May | Narrowed to a tossup within the margin of error | Entering dead-heat territory |
-| Now (D-12) | Results diverge by polling firm | Too close to call |
-The key point is that results differ from one polling firm to another. Even polls released in the same week can show Candidate A ahead in one and Candidate B ahead in another. So rather than getting swept up in every single number, you need to watch the trend.
-> 💡 Key Tip: When reading a poll, always check the polling firm, survey dates, and sampling error together. You can verify the exact figures yourself on the website of the National Election Survey Deliberation Commission.
-> 💡 Key Point: Through May, a clear lead narrowed into a tossup within the margin of error, making the outcome virtually impossible to predict.
-## 2. Jung Won-oh vs. Oh Se-hoon — The Two Candidates' Profiles at a Glance
-The two candidates' résumés lay out the matchup perfectly. One is a veteran chasing a fourth term in office, the other a fresh face who came up as a district mayor.
-Here's a comparison of their core profiles:
-- Oh Se-hoon: The incumbent Seoul mayor. A win this time would put him on track for an unprecedented record — a fifth term as Seoul mayor. He's running on "stability and continuity."
-- Jung Won-oh: Former mayor of Seongdong District. As the only district mayor in the metropolitan area to serve three consecutive terms, he highlights his administrative track record. His pitch rests on "a new face and generational change."
-Jung Won-oh, in particular, points to the transformation of Seongsu-dong as his signature achievement. His strategy frames the journey of a run-down factory district turning into one of the city's hottest spots as "scaling the Seongdong model up to all of Seoul." Oh Se-hoon counters with citywide infrastructure accomplishments such as the Han River Renaissance.
-As a result, the contest is naturally hardening into a head-to-head over the candidates themselves: "the five-term legend vs. the first mayor to rise from a district office."
-> 💡 Key Point: The contrast between "Oh Se-hoon, experience and stability" and "Jung Won-oh, results and a fresh face" forms the basic frame of this election.
-## 3. Signature Pledges Collide Head-On: "Commute" vs. "Housing"
-What voters feel most directly, in the end, are everyday-life pledges. And the two candidates' signature promises point in distinctly different directions.
-Here's a rundown of their flagship pledges:
-| Category | Jung Won-oh | Oh Se-hoon |
-| --- | --- | --- |
-| Signature pledge | A 30-minute commuter city | Supply of 310,000 homes |
-| Youth & newlywed housing | Equity-accumulation homeownership | SH co-investment model |
-| Core frame | Quality-of-life and safety focused | Development and supply focused |
-Jung Won-oh's "30-minute commuter city" is a vision to ensure that, wherever you live, you can reach work within 30 minutes — putting the weight on transit and everyday infrastructure. Oh Se-hoon's "supply of 310,000 homes," by contrast, is a head-on approach: rein in housing prices by expanding supply.
-Their housing pledges for young people and newlyweds clash, too. Both share the goal of "easing the burden of buying a home," but their methods differ — Jung Won-oh favors an equity-accumulation model that lets buyers build up assets bit by bit, while Oh Se-hoon backs a co-investment model in which the public sector invests alongside buyers.
-> 💡 Key Point: The difference in priorities — "transit and daily life" (Jung Won-oh) versus "housing and supply" (Oh Se-hoon) — defines each candidate's policy identity.
-## 4. Voter Sentiment by Generation and Region — Here's the Real Battleground
-This election is likely to be decided by the generational divide, because the candidates' support bases split sharply by age group.
-Here's how the reported voter map breaks down:
-- Jung Won-oh's strength: Voters in their 40s and 50s — the core "everyday-life" generation grappling firsthand with their children's education and housing costs
-- Oh Se-hoon's strength: Voters in their 20s and 30s, and those 70 and older — a relative edge at both ends of the age spectrum
-- The battleground: The last-minute choice of moderate and unaffiliated voters, where neither side dominates
-What's intriguing is the sentiment among voters in their 20s and 30s. Contrary to past conventional wisdom, Oh Se-hoon is showing strength among younger voters — a trend read as a response to bread-and-butter issues like housing and jobs.
-On top of that, the presence of third-party candidates such as the Reform Party is another variable. Depending on which side's base those votes eat into more, the gap between first and second place could swing.
-> 💡 Key Point: In a generational divide split between the 40s–50s (Jung Won-oh) and the 20s–30s plus older voters (Oh Se-hoon), the moderate bloc and third-party votes will decide the final direction.
-## 5. The Remaining 12 Days — Last-Minute Variables That Could Swing the Result
-Elections tend to swing in the final week. Here are the variables worth watching all the way to the finish at the D-12 mark.
-These are the last-minute points to keep an eye on:
-1. Macro real-estate variables: How a situation where sale, jeonse, and monthly-rent prices are all rising at once plays into the "referendum on the incumbent vs. case for stability" frame
-2. Negative warfare: The fallout from late-stage exposés on development and safety issues, GTX-related allegations, candidate vetting, and more
-3. TV debate scorecards: A knockout blow — or a slip-up — in the final debates such as the Kwanhun Club's
-4. Turnout: Since whichever side mobilizes its generations more tends to benefit, the final turnout could decide the result
-Real estate, in particular, is a double-edged sword. Price instability could fuel a referendum mood against the incumbent — or, conversely, could strengthen the case for stability under the banner of "steady management."
-> 💡 Caution: Once the blackout period for publishing polls kicks in (six days before election day), official figures dry up. From that point on, be careful not to be swayed by "blind-spot information" from unknown sources.
-> 💡 Key Point: Real estate, debates, turnout, and negative campaigning — these four variables look set to be the final counterweights in a dead-heat race.
-## Wrapping Up: An Election Where a Single Vote Carries the Most Weight
-![Wrapping Up: An Election Where a Single Vote Carries the Most Weight](/images/posts/2026-05-27-63-local-elections-a-razor-thin-seoul-mayoral-race-jung-won-oh-vs-oh-se-hoon-ful/gen-00016.png)
-This Seoul mayoral race in the June 3 local elections is a contest where "Oh Se-hoon, chasing a fifth term" and "Jung Won-oh, the fresh face" square off within the margin of error — truly a race where a single vote could tip the result. Here's the gist once more:
-- The race shifted dramatically from a clear lead to a dead heat
-- The pledges contrast as "transit and daily life" vs. "housing and supply"
-- The battleground is the generational divide, plus moderate and third-party voter sentiment
-The most important thing is to weigh the pledges and the person that fit your own life for yourself, without being swayed by the numbers. Check each candidate's pledges on the National Election Commission's "Policy & Pledge Plaza," and verify the polls directly with the National Election Survey Deliberation Commission. And above all, don't forget to vote on June 3. If this post helped you make up your mind, please share it with those around you!
-### 출처
-https://www.ajunews.com/view/20260522165714432
-https://biz.heraldcorp.com/article/10743351
-https://www.fnnews.com/news/202605230609194454
-https://www.sisajournal.com/news/articleView.html?idxno=373852
-https://www.etoday.co.kr/news/view/2585930
+> **11월 20일 업데이트 — 최종 결과**: 오세훈 국민의힘 후보가 **49.22%(257만5,819표)**를 얻어 **48.07%(251만5,560표)**의 정원오 더불어민주당 후보를 **1.15%p(6만259표)** 차이로 이기고 5선에 성공했다. 송파구 잠실7동 제2투표소에서 생긴 '투표용지 부족 사태'와 시위대 봉쇄로 투표함 2개의 개표가 늦어져, 서울 개표는 선거 이틀 뒤인 6월 5일에야 끝났다. 정 후보가 구청장을 지낸 성동구 성수동에서도 오 후보가 더 많이 득표했다. 아래 본문은 선거 12일 전인 5월 27일 기준으로 쓴 내용이다.
 
+"2주 만에 판이 뒤집혔다." 6·3 지방선거 서울시장 선거를 두고 가장 많이 나오는 말이다. 5월 초만 해도 한쪽이 뚜렷하게 앞섰지만, 지금은 오차범위 안 접전으로 좁혀져 누가 이길지 장담하기 어렵다. 매일 쏟아지는 여론조사 기사에 오히려 더 헷갈리는 사람을 위해 흩어진 내용을 한곳에 모았다.
+
+이 글에서 정리한 내용은 다음과 같다.
+
+- 5월 초부터 지금까지 여론조사 흐름
+- 정원오·오세훈 두 후보의 이력과 대표 공약 비교
+- 세대·지역별로 갈린 표심과 진짜 승부처
+- 남은 12일 동안 결과를 흔들 막판 변수
+
+## 1. 2주 만에 뒤집힌 판 — 여론조사 흐름부터
+
+이번 선거의 키워드는 단연 '초접전'이다. 5월 초와 5월 중순의 분위기가 전혀 다르다.
+
+| 시점 | 보도된 판세 | 분위기 |
+| --- | --- | --- |
+| 5월 초 | 한 후보가 약 10%p 앞섬 | 굳어지는 듯 |
+| 5월 중순 | 오차범위 안으로 좁혀짐 | 접전 돌입 |
+| 현재(D-12) | 조사 기관마다 결과가 엇갈림 | 예측 불가 |
+
+중요한 건 **조사 기관마다 결과가 다르다**는 점이다. 같은 주에 나온 조사라도 어떤 곳은 A 후보, 어떤 곳은 B 후보가 앞선다. 숫자 하나하나에 휩쓸리기보다 흐름을 봐야 한다.
+
+> 💡 팁: 여론조사를 볼 때는 조사 기관, 조사 날짜, 표본오차를 꼭 함께 확인하자. 정확한 수치는 중앙선거여론조사심의위원회 누리집에서 직접 볼 수 있다.
+
+## 2. 정원오 vs 오세훈 — 두 후보 한눈에 보기
+
+두 후보의 이력만 봐도 대결 구도가 그려진다. 한쪽은 다섯 번째 임기에 도전하는 현직 시장, 다른 한쪽은 구청장 출신 새 얼굴이다.
+
+- **오세훈:** 현 서울시장. 이번에 당선되면 서울시장 5선이라는 전례 없는 기록을 세운다. '안정과 연속성'을 내세운다.
+- **정원오:** 전 성동구청장. 성동구청장을 세 번 지낸 행정 경험을 강조하며, '새 얼굴과 세대교체'를 내세운다.
+
+정원오 후보는 특히 성수동의 변화를 대표 성과로 꼽는다. 낡은 공장 지대가 서울에서 가장 뜨거운 동네가 된 과정을 '성동 모델을 서울 전체로 넓히겠다'는 메시지로 연결한다. 오세훈 후보는 성수동 변화가 자신의 과거 재임 시절 산업개발진흥지구 지정에서 시작됐다고 맞서고, 한강 르네상스 같은 서울 전역의 기반시설 성과를 앞세운다.
+
+> 💡 핵심: '경험과 안정의 오세훈'과 '성과와 새 얼굴의 정원오'가 이번 선거의 기본 구도다.
+
+## 3. 대표 공약 정면충돌 — '출퇴근' vs '주택'
+
+유권자가 가장 직접 느끼는 건 결국 생활 공약이다. 두 후보의 대표 공약은 방향이 뚜렷하게 다르다.
+
+| 구분 | 정원오 | 오세훈 |
+| --- | --- | --- |
+| 대표 공약 | 30분 출퇴근 도시 | 주택 31만 호 공급 |
+| 청년·신혼 주거 | 지분적립형 내 집 마련 | SH 공동투자 모델 |
+| 핵심 방향 | 생활·안전 중심 | 개발·공급 중심 |
+
+정원오 후보의 '30분 출퇴근 도시'는 서울 어디에 살든 30분 안에 출근할 수 있게 하겠다는 구상으로, 교통과 생활 기반시설에 무게를 둔다. 오세훈 후보의 '주택 31만 호 공급'은 공급을 늘려 집값을 잡겠다는 정면 돌파 방식이다.
+
+청년·신혼부부 주거 공약도 부딪힌다. "집 사는 부담을 덜어 주겠다"는 목표는 같지만, 정 후보는 조금씩 지분을 쌓아 가는 방식을, 오 후보는 공공이 함께 투자하는 방식을 내세운다.
+
+> 💡 핵심: '교통과 생활'(정원오)과 '주택과 공급'(오세훈)이라는 우선순위 차이가 두 후보의 정책 색깔을 가른다.
+
+## 4. 세대·지역별 표심 — 진짜 승부처는 여기
+
+이번 선거는 세대 대결로 결판날 가능성이 크다. 나이대별로 지지층이 뚜렷하게 갈리기 때문이다.
+
+- **정원오 후보 강세:** 40~50대. 자녀 교육과 집값 문제를 가장 직접 겪는 세대다.
+- **오세훈 후보 강세:** 20~30대와 70대 이상. 양 끝 세대에서 상대적으로 앞선다.
+- **승부처:** 어느 쪽도 우세하지 않은 중도·무당층의 막판 선택
+
+눈에 띄는 건 20~30대 표심이다. 예전 통념과 달리 오세훈 후보가 젊은 층에서 강세를 보이는데, 집값과 일자리 같은 먹고사는 문제에 대한 반응으로 해석된다.
+
+여기에 개혁신당 등 제3정당 후보도 변수다. 이 표가 어느 쪽 지지층을 더 많이 가져가느냐에 따라 1·2위 격차가 달라질 수 있다.
+
+> 💡 핵심: 40~50대(정원오)와 20~30대·고령층(오세훈)으로 갈린 구도에서 중도층과 제3당 표가 최종 방향을 정한다.
+
+## 5. 남은 12일 — 결과를 흔들 막판 변수
+
+선거는 마지막 일주일에 출렁이곤 한다. D-12 시점에서 끝까지 지켜볼 변수는 네 가지다.
+
+1. **부동산:** 매매·전세·월세가 한꺼번에 오르는 상황이 '현직 심판론'과 '안정론' 중 어느 쪽에 힘을 실을지
+2. **네거티브 공방:** 개발·안전 문제, [GTX 관련 의혹](/posts/2026-05-27-gtx-철근-누락-사태-우리-동네-아파트는-안전할까-3단계-확인법/), 후보 검증 등 막판 폭로의 파장
+3. **TV 토론:** 관훈토론 같은 마지막 토론에서의 결정타 또는 실수
+4. **투표율:** 자기 세대를 더 많이 투표장에 보낸 쪽이 유리하다
+
+특히 부동산은 양날의 칼이다. 집값 불안이 현직 심판 분위기로 이어질 수도 있고, 반대로 '안정적 관리'를 내세운 안정론에 힘을 보탤 수도 있다.
+
+> 💡 주의: 선거일 6일 전부터는 여론조사 공표가 금지돼 공식 수치가 사라진다. 이때부터 출처를 알 수 없는 '깜깜이 정보'에 휘둘리지 않도록 조심하자.
+
+## 마무리 — 한 표의 무게가 가장 큰 선거
+
+![6·3 지방선거 서울시장 선거 마무리](/images/posts/2026-05-27-63-local-elections-a-razor-thin-seoul-mayoral-race-jung-won-oh-vs-oh-se-hoon-ful/gen-00016.png)
+
+이번 서울시장 선거는 '5선에 도전하는 오세훈'과 '새 얼굴 정원오'가 오차범위 안에서 맞붙은, 한 표가 결과를 가를 수 있는 선거다.
+
+- 뚜렷한 우세에서 초접전으로 판세가 크게 바뀌었다
+- 공약은 '교통과 생활' 대 '주택과 공급'으로 갈린다
+- 승부처는 세대 구도, 그리고 중도·제3당 표심이다
+
+숫자에 휘둘리기보다 내 삶에 맞는 공약과 사람을 직접 따져 보는 게 가장 중요하다. 후보별 공약은 중앙선거관리위원회 '정책·공약마당'에서, 여론조사는 중앙선거여론조사심의위원회에서 직접 확인할 수 있다.
+
+(결과는 맨 위 업데이트에 적었듯 1.15%p, 6만여 표 차이였다. 실제로 한 표의 무게가 컸던 선거였다.)
+
+### 출처
+
+- [아주경제](https://www.ajunews.com/view/20260522165714432)
+- [헤럴드경제](https://biz.heraldcorp.com/article/10743351)
+- [파이낸셜뉴스](https://www.fnnews.com/news/202605230609194454)
+- [시사저널](https://www.sisajournal.com/news/articleView.html?idxno=373852)
+- [이투데이](https://www.etoday.co.kr/news/view/2585930)
+- [연합뉴스 — 개표 완료, 오세훈 1.15%p 차 승리](https://www.yna.co.kr/view/AKR20260605109900001)
+- [한겨레 — 오세훈, 최종 6만259표 차 승리](https://www.hani.co.kr/arti/politics/politics_general/1262168.html)
+- [채널A — 성수동에서도 오세훈 앞서](https://ichannela.com/news/detail/000000532993.do)

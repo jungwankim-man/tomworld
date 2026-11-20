@@ -1,140 +1,141 @@
 ---
-title: "Samsung Electronics Union Strike Drags On: Semiconductor Industry and Stock Price Shock Outlook (2026 Update)"
-description: "\"Will the Samsung Electronics stock I'm holding actually go up once the strike ends?\" That's the most common question I see in stock communities these days."
+title: "삼성전자 노조 파업 사태 총정리 — 쟁점, 반도체 공급망 영향, 주가 시나리오"
+description: "2026년 삼성전자 노조 파업 위기의 핵심은 임금이 아니라 성과급 제도였다. 5월 20일 잠정합의부터 찬반투표 가결(찬성 73.7%)까지의 경과, 반도체·HBM 공급망에 미칠 수 있었던 영향, 투자자가 본 주가 시나리오와 체크포인트를 정리했다."
 cover:
   image: "/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/cover.png"
-  alt: "Samsung Electronics Union Strike Drags On: Semiconductor Industry and Stock Price Shock Outlook (2026 Update)"
+  alt: "삼성전자 노조 파업과 반도체 공급망"
   relative: false
 date: 2026-05-27T19:49:11+09:00
+lastmod: 2026-11-20T16:30:00+09:00
 draft: false
 categories: ["시사이슈"]
-tags: ["Samsung strike", "semiconductor crisis", "Samsung stock", "HBM supply chain", "emergency arbitration"]
-robotsNoIndex: true
-sitemap:
-  disable: true
-build:
-  list: never
+tags: ["삼성전자", "삼성전자 노조", "성과급", "HBM", "반도체 공급망"]
 ---
-"Will the Samsung Electronics stock I'm holding actually go up once the strike ends?" That's the most common question I see in stock communities these days. A tentative agreement was reached on May 20, 2026, but with the possibility that the strike could reignite depending on the union members' ratification vote, the market is still walking on thin ice.
+> **11월 20일 업데이트**: 잠정합의안은 5월 27일 조합원 찬반투표에서 **찬성 73.7%(4만6,142명), 투표율 95.5%로 가결**됐고, 같은 날 임금협약 조인식이 열려 총파업 위기는 끝났다. 다만 노조별 찬성률은 크게 갈렸다. 반도체(DS) 직원 중심의 초기업노조는 80.6%가 찬성했지만, 완제품(DX) 직원이 섞인 전삼노는 21.1%만 찬성했다. 비반도체 중심의 동행노조는 투표 절차 중지 가처분을 냈다. 아래 본문은 투표 결과가 나오기 전인 5월 27일 기준으로 쓴 내용이다.
 
-What you'll learn in this article:
-✅ Key issues and background of the Samsung Electronics union strike
-✅ The real scale of losses to the semiconductor industry and supply chain
-✅ Short- and mid-term stock price scenarios and shifts in foreign investor flows
-✅ Ripple effects on the supplier ecosystem and global Big Tech
-✅ Three variables investors need to watch right now
+"파업이 끝나면 들고 있는 삼성전자 주식이 오를까?" 요즘 주식 커뮤니티에서 가장 많이 보이는 질문이다. 2026년 5월 20일 잠정합의가 나왔지만, 조합원 찬반투표 결과에 따라 파업이 다시 불붙을 수 있어 시장은 여전히 살얼음판이다.
 
-## Core Issues and Background of the Strike
-_Source: [thumb.mt.co.kr](https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/05/2026052116065365651_1.jpg)_
+이 글에서 정리한 내용은 다음과 같다.
 
-At its core, this strike isn't a simple wage hike dispute — it's a demand to overhaul the entire performance bonus calculation system. The union has strongly pushed to abolish the cap on the company's OPI (Overperformance Incentive) and to tie compensation to a fixed percentage of operating profit.
+- 파업의 핵심 쟁점과 배경
+- 반도체 산업과 공급망이 입을 수 있는 손실 규모
+- 단기 주가 시나리오와 외국인 수급
+- 협력사 생태계와 해외 고객사로 번지는 영향
+- 투자자가 지금 볼 변수 세 가지
 
-The key issues on the negotiation table can be summarized as follows:
+## 파업의 핵심 쟁점과 배경
 
-- Abolish the OPI cap: Demand to remove the existing performance bonus ceiling
-- Tie 15% of operating profit to bonuses: Demand for a structure directly linked to company performance
-- Additional demands: Work-life balance and labor-management consultation procedures are often raised as supplementary items
+이번 파업은 단순한 임금 인상 다툼이 아니라 **성과급 산정 방식 전체를 바꾸자는 요구**였다. 노조는 초과이익성과급(OPI) 상한을 없애고, 영업이익의 일정 비율을 성과급으로 묶는 구조를 강하게 요구했다.
 
-| Category | Union Demand | Management Position |
+| 구분 | 노조 요구(보도 기준) | 회사 입장(보도 기준) |
 | --- | --- | --- |
-| Bonus funding source | 15% of operating profit | Maintain division-level OPI |
-| Cap | Abolish | Maintain current cap |
-| Payment form | Cash | Partial stock acceptable |
+| 성과급 재원 | 영업이익의 15% | 사업부별 OPI 유지 |
+| 상한 | 폐지 | 기존 상한 유지 |
+| 지급 방식 | 현금 | 일부 자사주 가능 |
 
-Under the tentative agreement reached on May 20, a new "Special Management Performance Bonus" — funded by 10.5% of business performance for the semiconductor division only, with no cap and paid entirely in treasury stock — was established, moving things toward resolution. However, the union ratification vote is being held from May 22 to 27, and the outcome could once again flip the situation.
+5월 20일 밤 나온 잠정합의안은 **반도체(DS) 부문에만 사업성과의 10.5%를 재원으로 하는 상한 없는 '특별경영성과급'을 신설하고, 전액 자사주로 지급**하는 내용이다. 평균 임금 인상률은 6.2%로 정해졌다. 완제품(DX) 부문 직원에게는 600만 원 상당의 자사주가 별도로 지급된다. 찬반투표는 5월 22일부터 27일 오전까지 진행됐다.
 
-> 💡 Key point: This strike isn't a fight over "wages" — it's an institutional war over restructuring the performance bonus system.
+> 💡 핵심: 이번 갈등은 '임금'이 아니라 성과급 제도를 어떻게 다시 짤 것인가를 둘러싼 싸움이었다.
 
-## Semiconductor Industry and Supply Chain Shock
-![Semiconductor Industry and Supply Chain Shock](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00220.png)
+## 반도체 산업과 공급망에 미칠 충격
 
-Because semiconductor manufacturing is a continuous process, even a few hours of downtime can deal a direct blow to yield and quality. It's not uncommon for it to take several days to bring a cooled line back to normal operation.
+![반도체 산업과 공급망 충격](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00220.png)
 
-The loss estimates from industry analysts and securities firms are by no means small:
+반도체 공장은 24시간 멈추지 않고 돌아가는 연속 공정이다. 몇 시간만 서도 수율과 품질에 바로 타격이 가고, 한 번 식은 라인을 정상으로 돌리는 데 며칠이 걸리기도 한다.
 
-- Daily revenue disruption: approximately 1 trillion won
-- Cumulative loss if utilization drops 50%: up to 30 trillion won
-- Estimated direct operating profit loss: approximately 10 trillion won
-- Semiconductor share of South Korean exports: approximately 37%
+증권가와 업계가 내놓은 손실 추정(파업이 실제로 길어졌을 경우)은 이렇다.
 
-Especially right now, we're in a supercycle phase with surging AI memory demand. With HBM and high-capacity DRAM ramping into full-scale production, disruptions at the Pyeongtaek and Giheung lines could immediately cascade into delays in AI accelerator supply schedules for global Big Tech players like Nvidia, Google, and Microsoft.
+- 하루 매출 차질: 약 1조 원(추정)
+- 가동률이 절반으로 떨어지면 누적 손실: 최대 30조 원(추정)
+- 영업이익 직접 손실: 약 10조 원(추정)
+- 참고로 반도체는 한국 수출의 약 37%를 차지한다
 
-Personally, I think HBM supply chain disruption is the most underestimated risk in this whole situation. Since Samsung and SK Hynix together hold roughly two-thirds of the global memory market, even one of them stumbling can cause market prices themselves to swing.
+지금은 AI 메모리 수요가 폭발하는 시기다. HBM과 고용량 D램을 본격 양산하는 평택·기흥 라인이 멈추면, 엔비디아·구글·마이크로소프트 같은 빅테크의 AI 가속기 공급 일정까지 줄줄이 밀릴 수 있다.
 
-> 💡 Key point: A prolonged strike isn't just one Korean company's problem — it's a variable for the entire global AI supply chain.
+개인적으로는 HBM 공급 차질이 이번 사태에서 가장 과소평가된 위험이라고 봤다. 삼성전자와 SK하이닉스가 세계 메모리 시장의 3분의 2가량을 차지하고 있어서, 한 곳만 흔들려도 시장 가격 자체가 출렁일 수 있다.
 
-## Samsung Electronics Stock Scenarios and Foreign Investor Flows
-![Samsung Electronics Stock Scenarios and Foreign Investor Flows](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00221.png)
+> 💡 핵심: 파업이 길어지면 한국 기업 한 곳의 문제가 아니라 세계 AI 공급망 전체의 변수가 된다.
 
-The stock has already shown major volatility. Right after the tentative agreement was announced on May 21, Samsung Electronics surged +8.51% to close at 299,500 won. It was the combined result of "negative news removal" and a "shift to foreign net buying."
+## 삼성전자 주가 시나리오와 외국인 수급
 
-Going forward, the possible scenarios can be broken into three:
+![삼성전자 주가 시나리오와 외국인 수급](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00221.png)
 
-1. Agreement passes (base case): Short-term momentum holds, potential for further upside attempts
-2. Vote fails → strike reignites (negative): Foreign investors flip to selling, short-term correction pressure widens
-3. Emergency arbitration is invoked (wildcard): Short-term sharp rebound followed by a trading range due to concerns about prolonged labor-management conflict
+주가는 이미 크게 움직였다. 잠정합의 소식이 나온 5월 21일 삼성전자는 **8.51% 오른 29만9,500원**에 마감했다. 악재가 사라졌다는 안도감과 외국인 순매수 전환이 겹친 결과다.
 
-| Scenario | Stock Direction | Foreign Flow |
+앞으로의 경우의 수는 세 가지로 나눠 볼 수 있었다.
+
+1. **합의안 가결(기본 시나리오):** 단기 상승 흐름 유지, 추가 상승 시도 가능
+2. **부결 → 파업 재점화(부정적):** 외국인 매도 전환, 단기 조정 확대
+3. **긴급조정 발동(변수):** 단기 급반등 뒤, 노사 갈등 장기화 우려로 박스권
+
+| 시나리오 | 주가 방향 | 외국인 수급 |
 | --- | --- | --- |
-| Pass | Up | Net buying continues |
-| Fail | Down | Flip to net selling |
-| Emergency arbitration | Volatility ↑ | Mixed |
+| 가결 | 상승 | 순매수 지속 |
+| 부결 | 하락 | 순매도 전환 |
+| 긴급조정 | 변동성 확대 | 엇갈림 |
 
-> 💡 Key point: The union ratification vote result is the first inflection point for the short-term stock price.
+결과적으로는 1번(가결)으로 마무리됐다.
 
-## Supplier Ecosystem and Global Ripple Effects
-![Supplier Ecosystem and Global Ripple Effects](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00222.png)
+> 💡 핵심: 조합원 투표 결과가 단기 주가의 첫 번째 갈림길이었다.
 
-When Samsung Electronics alone comes to a halt, the shock cascades like dominoes: tier-1 suppliers → tier-2 suppliers → regional economies. Materials, parts, and equipment (MPE) firms clustered in Pyeongtaek, Hwaseong, Giheung, and Cheonan depend on Samsung for a substantial share of their revenue.
+## 협력사 생태계와 해외로 번지는 영향
 
-Areas where the impact is becoming visible include:
+![협력사 생태계와 해외 파급](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00222.png)
 
-- Delayed orders for etching and deposition equipment
-- Reduced shipments of materials like photoresist and CMP slurry
-- Concurrent drops in utilization at back-end (OSAT) firms
-- Decline in local commercial activity (cafeterias, commuter buses, dormitory supply chains)
+삼성전자가 멈추면 충격은 1차 협력사 → 2차 협력사 → 지역 경제로 도미노처럼 번진다. 평택·화성·기흥·천안 일대의 소재·부품·장비 업체들은 매출의 상당 부분을 삼성전자에 기대고 있다.
 
-The global view has shifted quickly too. Bloomberg, Reuters, and Nikkei have issued urgent reports on the strike, framing it as "a new risk for the global technology supply chain." With AI and HBM demand exploding, major overseas customers and foreign governments are also keeping a close eye on Korea's semiconductor supply situation.
+영향이 먼저 나타날 수 있는 곳은 이렇다.
 
-> 💡 Key point: The real cost of the strike isn't paid by Samsung alone — it's paid jointly by thousands of suppliers and global customers.
+- 식각·증착 장비 발주 지연
+- 포토레지스트, CMP 슬러리 같은 소재 출하 감소
+- 후공정(패키징·테스트) 업체 가동률 동반 하락
+- 구내식당·통근버스·기숙사 납품 등 지역 상권 위축
 
-## Three Things Investors Need to Check Right Now
-![Three Things Investors Need to Check Right Now](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00223.png)
+해외 시선도 빠르게 바뀌었다. 블룸버그·로이터·닛케이 등이 파업 소식을 긴급 보도하며 '세계 기술 공급망의 새로운 위험'으로 다뤘다.
 
-The safest way to avoid being whipsawed by news headlines is to track the variables themselves. Here's the checklist I personally review every day:
+나도 제조업 구매 일을 하다 보니, 큰 고객사가 흔들릴 때 협력사 쪽 발주가 먼저 줄어드는 모습을 자주 본다. 파업의 비용은 본사만 치르는 게 아니다.
 
-- Union vote results (held 5/22–27): Both approval rate and rejection rate matter
-- Foreign investor net buying flow: Whether daily flows are sustaining a buying bias
-- HBM shipment guidance: Statements about supply schedule changes on the quarterly earnings conference call
+> 💡 핵심: 파업의 진짜 비용은 수천 개 협력사와 해외 고객사가 함께 치른다.
 
-> 💡 Key tip: Unless you're day trading, you should weigh post-event quarterly earnings and HBM shipment volumes more heavily.
+## 투자자가 지금 볼 변수 세 가지
 
-There are also some traps to watch out for. The simple formula "negative news removed = guaranteed rally" is dangerous. Because much of the short-term upside has already been priced in by the +8.5% surge on May 21, profit-taking pressure can emerge even if the vote passes.
+![투자자 체크포인트](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00223.png)
 
-> 💡 Key point: There are three variables — vote results, foreign investor flows, and HBM guidance. Tracking just these three is enough.
+뉴스 제목에 휘둘리지 않는 가장 확실한 방법은 변수 자체를 추적하는 것이다.
 
-## Closing — What This Episode Leaves Us With
-![Closing — What This Episode Leaves Us With](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00224.png)
+- **조합원 투표 결과(5/22~27):** 가결 여부뿐 아니라 찬성률과 노조별 차이까지
+- **외국인 순매수 흐름:** 매수 우위가 며칠씩 이어지는지
+- **HBM 출하 가이던스:** 분기 실적 발표에서 공급 일정 변화 언급이 있는지
 
-The Samsung Electronics union strike isn't just a labor-management dispute — it's an event that simultaneously shakes Korean manufacturing's compensation structure and global supply chain stability. Even with a tentative agreement in place, it's hard to call this "over" until the union vote results come in.
+함정도 있다. "악재 해소 = 무조건 상승"이라는 공식은 위험하다. 5월 21일 8.5% 급등으로 단기 기대가 상당 부분 이미 반영돼서, 가결되더라도 차익 실현 매물이 나올 수 있다.
 
-To recap the key points covered today:
+> 💡 핵심: 단타가 아니라면 이벤트 자체보다 이후 분기 실적과 HBM 출하량을 더 무겁게 봐야 한다.
 
-- The dispute is about restructuring the performance bonus system, not wages
-- Potential losses of 1 trillion won per day, up to 30 trillion won cumulatively
-- The May 22–27 union vote is the short-term inflection point
-- HBM supply chain disruption could ripple all the way to the global AI industry
-- Investors should track three variables: vote results + foreign flows + HBM shipments
+## 마무리 — 이번 사태가 남긴 것
 
-If you currently hold Samsung Electronics stock or are considering buying in, look at the data, not the headlines. The union vote results will be released soon. Once you see them, I recommend reviewing your position based on your own investment horizon (short / mid / long term).
+![마무리](/images/posts/2026-05-27-samsung-electronics-union-strike-drags-on-outlook-for-semiconductor-industry-and/gen-00224.png)
 
-If this article was helpful, please bookmark and share it. In the next post, I'll cover "The HBM4 Mass Production Roadmap and the Samsung vs. SK Market Share War."
+삼성전자 노조 파업 위기는 단순한 노사 분쟁이 아니라, 한국 제조업의 보상 구조와 세계 공급망 안정성을 동시에 흔든 사건이었다.
 
-### Sources
-https://namu.wiki/w/2026%EB%85%84%20%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%85%B8%EC%A1%B0%20%EC%B4%9D%ED%8C%8C%EC%97%85
-https://www.mt.co.kr/stock/2026/05/21/2026052116065365651
-https://www.fnnews.com/news/202605201819534363
-https://imnews.imbc.com/replay/2026/nwdesk/article/6824378_37004.html
-https://www.dt.co.kr/article/12063772
+- 쟁점은 임금이 아니라 성과급 제도 개편이었다
+- 파업이 길어졌다면 하루 1조 원, 누적 최대 30조 원 손실 추정이 나왔다
+- 5/22~27 조합원 투표가 단기 갈림길이었고, 결과는 가결이었다
+- 부문별 성과급 격차(DS와 DX)를 둘러싼 노노 갈등은 후속 과제로 남았다
+- 투자자가 볼 변수는 투표 결과, 외국인 수급, HBM 출하 세 가지였다
 
-*Image sources: namu.wiki, mt.co.kr, fnnews.com, imnews.imbc.com, dt.co.kr*
+같은 시기 반도체 부품주 흐름은 [삼성전기 종목 분석](/posts/2026-05-30-삼성전기009150-종목-분석-aimlcc-슈퍼사이클-속-황제주-주가-흐름-정리/)에 정리해 두었다.
+
+*이 글은 정보 정리 목적이며 투자 권유가 아닙니다.*
+
+### 출처
+
+- [나무위키 — 2026년 삼성전자 노조 총파업](https://namu.wiki/w/2026%EB%85%84%20%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%85%B8%EC%A1%B0%20%EC%B4%9D%ED%8C%8C%EC%97%85)
+- [머니투데이 (5/21 주가)](https://www.mt.co.kr/stock/2026/05/21/2026052116065365651)
+- [파이낸셜뉴스](https://www.fnnews.com/news/202605201819534363)
+- [MBC 뉴스데스크](https://imnews.imbc.com/replay/2026/nwdesk/article/6824378_37004.html)
+- [디지털타임스](https://www.dt.co.kr/article/12063772)
+- [연합뉴스 — 잠정합의안 73.7% 찬성 가결](https://www.yna.co.kr/view/AKR20260527064101003)
+- [이투데이 — 가결 후 가처분·소송 변수](https://www.etoday.co.kr/news/view/2588185)
+- [아시아경제 — 특별경영성과급 세부 내용](https://www.asiae.co.kr/article/2026052710355703887)
+
+*본문 이미지: AI 생성 일러스트로, 실제 장면이 아닙니다.*
