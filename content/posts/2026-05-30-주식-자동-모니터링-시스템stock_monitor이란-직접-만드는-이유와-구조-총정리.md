@@ -91,3 +91,4 @@ https://medium.com/@wutainfofu/building-a-real-time-equity-price-alert-system-wi
 https://deepcharts.substack.com/p/get-real-time-stock-drop-alerts-with
 https://wikidocs.net/91963
 
+직접 만든 시스템으로 코인 단타를 2년 백테스트한 결과는 [코인 자동매매 백테스트](/posts/2026-05-30-코인-자동매매-단타-2년-백테스트-btc-eth-sol-진짜-수익률/)에 정리했습니다.

@@ -52,4 +52,17 @@ Connection = "DP"
 
 **참고:** [Dell DDPM for macOS 안내](https://www.dell.com/support/kbdoc/en-us/000201067/dell-display-and-peripheral-manager-for-macos) · [Dell Display Manager 자산 보고서의 `UsageTime` 예시](https://www.dell.com/support/kbdoc/en-us/000060112/what-is-dell-display-manager)
 
+## 자주 묻는 질문
+
+**Q. U3223QE에 서비스 메뉴가 정말 없는 건가?**
+A. 단정할 수는 없다. 내 제품은 뒤쪽에 조이스틱과 전원 버튼만 있었고, 영상에 나온 버튼 조합으로는 서비스 메뉴가 열리지 않았다. 다른 조합이 있을 수 있지만, 사용시간만 알고 싶다면 위의 DDPM 보고서가 더 확실한 방법이었다.
+
+**Q. DisplayPort로 연결해두면 화면이 꺼져 있어도 사용시간이 계속 쌓이나?**
+A. 확인하지 못했다. 본문에 적었듯 DDPM 보고서만으로는 화면이 켜진 시간만 세는지, 대기 상태도 포함하는지 알 수 없었다. 정확히 알고 싶다면 일정 기간 대기 상태로만 두고 `UsageTime`이 늘어나는지 비교해 보는 방법이 있다.
+
+**Q. 이 값이 백라이트 점등 시간인가?**
+A. 그렇게 단정하기는 어렵다. 이번에 본 DDPM 보고서에는 백라이트 점등 시간이라는 별도 항목이 없었다. 그래서 이 숫자로 패널 수명을 계산하기보다, 중고로 사고팔 때 "대략 얼마나 쓴 제품인지"를 가늠하는 참고값으로 쓰는 게 맞다.
+
 *표지 사진: [Dāvis Mosāns from Salaspils, Latvia](https://commons.wikimedia.org/wiki/File:Monitor_-_Flickr_-_davispuh_(4).jpg) / Wikimedia Commons, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)*
+
+맥을 오래 쓰다 보면 장비 사용시간뿐 아니라 로컬 AI 구동 환경도 신경 쓰이게 됩니다. 제 실제 구동 기록은 [CUDA 없는 맥에서 로컬 AI 돌리기](/posts/local-ai-without-cuda-mac-m5/)에 적었습니다.
